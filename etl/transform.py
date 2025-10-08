@@ -173,7 +173,6 @@ class Transformer:
 
             # design
             'study_type': self.safe_get(protocol, 'designModule', 'studyType'),
-            'study_description': self.safe_get(protocol, 'designModule', 'studyType'),
             'enrollment_count': self.safe_get(protocol, 'designModule', 'enrollmentInfo', 'count'),
             'enrollment_type': self.safe_get(protocol, 'designModule', 'enrollmentInfo', 'type'),
             'allocation': self.safe_get(protocol, 'designModule', 'designInfo', 'allocation'),
