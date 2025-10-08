@@ -1,10 +1,10 @@
 from datetime import date
 import os
-from src.etl_scripts.load import Loader
-from src.etl_scripts.transform import Transformer
-from src.utils.log_service import progress_logger, error_logger
-from src.config import config
-from src.etl_scripts.extract import Extractor
+from etl.load import Loader
+from etl.transform import Transformer
+from etl.utils.log_service import progress_logger, error_logger
+from config import config
+from etl.extract import Extractor
 
 
 class ETL:
@@ -57,7 +57,7 @@ class ETL:
 
 
 
-etl = ETL(True, True)
+etl = ETL(True, False)
 if __name__ == "__main__":
 
     try:
@@ -65,6 +65,12 @@ if __name__ == "__main__":
             etl.extract()
             os.makedirs(etl.shard_dir, exist_ok=True)
             os.makedirs(etl.compact_dir, exist_ok=True)
+
+            with open("etl/states/last_extraction_result.py", "w") as f:
+                f.write(
+                    f'result = "SUCCESS"\n'
+                )
+
             etl.extractor.compact_shards(etl.shard_dir, etl.compact_dir)
 
         if etl.run_transformation_and_load:
