@@ -8,10 +8,9 @@ from src.etl_scripts.extract import Extractor
 
 
 class ETL:
-    def __init__(self, run_extraction, run_transformation, run_load):
+    def __init__(self, run_extraction, run_transformation_and_load):
         self.run_extraction = run_extraction
-        self.run_transformation = run_transformation
-        self.run_load = run_load
+        self.run_transformation_and_load = run_transformation_and_load
 
 
         self.file_date = date.today().strftime("%Y-%m-%d")
@@ -21,7 +20,7 @@ class ETL:
         self.compact_dir = f"{config.COMPACTED_STORAGE_DIR}/{self.file_date}"
 
         self.columns_to_read = config.COLUMNS_TO_READ
-        self.extractor = Extractor(timeout=10, max_retries=3,pages_to_load=10)
+        self.extractor = Extractor(timeout=10, max_retries=3,pages_to_load=2)
         self.transformer = Transformer(self.compact_dir)
         self.loader = Loader()
 
@@ -42,22 +41,23 @@ class ETL:
         progress_logger.info(f"Extracted {pages_extracted} pages")
 
 
-    def transform(self):
+    def transform_and_load(self):
         progress_logger.info(f"Transforming {self.extractor.pages_to_load} pages")
         try:
-            self.transformer.read_selective_parquet_columns(self.compact_dir, self.columns_to_read)
+            df = self.transformer.read_selective_parquet_columns(self.compact_dir, self.columns_to_read)
             progress_logger.info(f"TRANSFORMATION COMPLETE YAY!")
+
+            self.loader.load_to_postgres(df)
+            progress_logger.info(f"LOADING COMPLETE YAY!")
 
         except Exception as e:
             error_logger.error(f"Transformation failed with error: {str(e)}")
             raise
 
-    def load(self):
-        pass
 
 
 
-etl = ETL(True, True, False)
+etl = ETL(True, True)
 if __name__ == "__main__":
 
     try:
@@ -67,13 +67,10 @@ if __name__ == "__main__":
             os.makedirs(etl.compact_dir, exist_ok=True)
             etl.extractor.compact_shards(etl.shard_dir, etl.compact_dir)
 
-        if etl.run_transformation:
-            etl.transform()
+        if etl.run_transformation_and_load:
+            etl.transform_and_load()
 
-        # if etl.run_load:
-        #     etl.load()
-
-        progress_logger.info(f"SUCCESSFUL! HIGH FIVE!")
+        progress_logger.info(f"PIPELINE SUCCESSFUL! HIGH FIVE!")
 
     except Exception as e:
         progress_logger.error(f"Sorry o, pipeline failed: {e}")

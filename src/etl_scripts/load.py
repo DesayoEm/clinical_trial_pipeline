@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine
 from src.config import config
 from typing import Dict
 import pandas as pd
@@ -8,7 +8,7 @@ class Loader:
     def __init__(self):
         self.conn_str = config.DATABASE_CONNECTION_STRING
 
-    def load_to_postgres(self, dataframes: Dict[str, pd.DataFrame]):
+    def load_to_postgres(self, dataframes: pd.DataFrame):
         engine = create_engine(self.conn_str)
 
         load_order = [

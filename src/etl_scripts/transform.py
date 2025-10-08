@@ -100,7 +100,6 @@ class Transformer:
 
         for idx, row in df.iterrows():
             protocol = row.get('protocolSection')
-            progress_logger.info(f"vvvvvvvvvv {protocol}")
 
             if isinstance(protocol, str):
                 try:
