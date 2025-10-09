@@ -49,32 +49,6 @@ The pipeline ingests clinical trial data from ClinicalTrials.gov API, stages it 
 - Perform poorly (SQL JSON parsing is slower than Python wrangling)
 
 ---
-## Architecture Overview
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                    EXTRACTION LAYER                     │
-│  API → Parquet Shards (crash-resilient, stateful)       │
-│               Rate Limited: 50 req/min                  │
-│                         
-                       COMPACTION                         │
-│        Parquet Shards -> Single Compacted File           │
-│           (Storage optimization for loading)            │
-└─────────────────────────────────────────────────────────┘
-                           |
-                           V
-┌─────────────────────────────────────────────────────────┐
-│             TRANSFORMATION/LOADING LAYER                │
-│    Parquet → Pandas (flatten) -> Postgres Staging       │
-│                 (Structured tables)                     │
-└─────────────────────────────────────────────────────────┘
-                           |
-                           V
-┌─────────────────────────────────────────────────────────┐
-│             FINAL TRANSFORMATION LAYER                  │
-│            dbt models: facts & dimensions               │
-└─────────────────────────────────────────────────────────┘
-```
 
 ## Key Design Decisions
 ### Crash resistant extraction with State Persistence
@@ -186,13 +160,16 @@ While structural transformations happen in Python, dbt handles:
 - Column-level descriptions
 - Model dependencies
 
+
+
+
 ## Setup and Config
 
 ### Clone the Repository
 
 ```bash
 git clone <your-repo-url>
-cd netflix-etl-pipeline
+cd clinical_trial-pipeline
 ```
 
 ### Create Environment File
@@ -200,27 +177,29 @@ cd netflix-etl-pipeline
 Create a `.env` file in the root directory with the following variables:
 
 ```env
-# db Configuration
-DB_HOST=local_host
+DB_HOST=pipeline_db
 DB_PORT=5432
-DB_NAME=netflix
+DB_NAME=clinical_trials
 DB_USER=your username
-DB_URL=postgresql+psycopg2://username:password@netflix:5432/netflix
 DB_PASSWORD=your_password
-CSV_FILE_PATH=./netflix_titles.csv
+DATABASE_CONNECTION_STRING='postgresql+psycopg2://username:password@pipeline_db:5432/clinical_trials'
+SHARD_STORAGE_DIR=your/parquet/shards/directory
+COMPACTED_STORAGE_DIR=your/compacted/parquet/directory
+STATE_MGT_DIR=your/state/management/directory
+DBT_DIR=your/dbt/project/directory
 COMPOSE_FILE=docker-compose.yml
 ```
 
 ##  Running the Pipeline
 
 ```bash
-docker-compose build netflix-etl
+docker-compose build ct_pipeline
 
-docker-compose up -d netflix
+docker-compose up -d pipeline_db
 
-docker-compose ps netflix
+docker-compose ps studies
 
-docker-compose run --rm netflix-etl
+docker-compose run --rm ct_pipeline
 
 ```
 

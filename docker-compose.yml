@@ -14,9 +14,9 @@ services:
     ports:
       - "5433:5432"
     networks:
-      - netflix-network
+      - pipeline-network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -31,7 +31,7 @@ services:
       pipeline_db:
         condition: service_healthy
     environment:
-      DB_HOST: localhost
+      DB_HOST: pipeline_db
       DB_PORT: 5432
       DB_NAME: ${DB_NAME}
       DB_USER: ${DB_USER}
@@ -40,7 +40,6 @@ services:
       SHARD_STORAGE_DIR: ${SHARD_STORAGE_DIR}
       COMPACTED_STORAGE_DIR: ${COMPACTED_STORAGE_DIR}
       STATE_MGT_DIR: ${STATE_MGT_DIR}
-
       PYTHONUNBUFFERED: 1
     volumes:
       - ./netflix_titles.csv:/app/data/netflix_titles.csv:ro
@@ -48,9 +47,8 @@ services:
       - pipeline-network
     restart: "no"
 
-
 networks:
-  - pipeline-network:
+  pipeline-network:
     driver: bridge
 
 volumes:
