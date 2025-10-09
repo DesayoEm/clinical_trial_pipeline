@@ -368,7 +368,8 @@ class Transformer:
                 self.study_sites_data.append({
                     'study_site_key': self.generate_key(study_key, site_key),
                     'study_key': study_key,
-                    'site_key': site_key
+                    'site_key': site_key,
+                    'etl_created_at': datetime.now().isoformat()
                 })
 
 
@@ -385,7 +386,6 @@ class Transformer:
             'study_conditions': pd.DataFrame(self.study_conditions_data),
             'study_interventions': pd.DataFrame(self.study_interventions_data),
             'study_sites': pd.DataFrame(self.study_sites_data),
-            'etl_created_at': datetime.now().isoformat()
         }
 
         for name, df in dataframes.items():

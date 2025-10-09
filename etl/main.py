@@ -1,5 +1,6 @@
 from datetime import date
 import os
+import subprocess
 from etl.load import Loader
 from etl.transform import Transformer
 from etl.utils.log_service import progress_logger, error_logger
@@ -8,22 +9,21 @@ from etl.extract import Extractor
 
 
 class ETL:
-    def __init__(self, run_extraction, run_transformation_and_load):
+    def __init__(self, run_extraction, run_transformation_and_load, run_dbt=False):
         self.run_extraction = run_extraction
         self.run_transformation_and_load = run_transformation_and_load
-
+        self.run_dbt = run_dbt
 
         self.file_date = date.today().strftime("%Y-%m-%d")
 
-        #directoties for current date
+        # directories for current date
         self.shard_dir = f"{config.SHARD_STORAGE_DIR}/{self.file_date}"
         self.compact_dir = f"{config.COMPACTED_STORAGE_DIR}/{self.file_date}"
 
         self.columns_to_read = config.COLUMNS_TO_READ
-        self.extractor = Extractor(timeout=10, max_retries=3,pages_to_load=1000)
+        self.extractor = Extractor(timeout=10, max_retries=3, pages_to_load=2)
         self.transformer = Transformer(self.compact_dir)
         self.loader = Loader()
-
 
     def extract(self):
         pages_extracted = self.extractor.determine_starting_point()
@@ -40,7 +40,6 @@ class ETL:
 
         progress_logger.info(f"Extracted {pages_extracted} pages")
 
-
     def transform_and_load(self):
         progress_logger.info(f"Transforming {self.extractor.pages_to_load} pages")
         try:
@@ -52,14 +51,39 @@ class ETL:
 
         except Exception as e:
             error_logger.error(f"Transformation failed with error: {str(e)}")
+
+
+
+    def run_dbt_models(self, dbt_project_dir=None, models=None):
+        """Execute dbt run command after data loading"""
+        progress_logger.info("Starting dbt run...")
+
+        try:
+            dbt_command = ["dbt", "run"]
+            dbt_command.extend(["--project-dir", dbt_project_dir])
+
+
+            result = subprocess.run(
+                dbt_command,
+                capture_output=True,
+                text=True,
+                check=True
+            )
+
+            progress_logger.info(f"dbt run output:\n{result.stdout}")
+            progress_logger.info("dbt run COMPLETE YAY!")
+
+        except subprocess.CalledProcessError as e:
+            error_logger.error(f"dbt run failed with error:\n{e.stderr}")
+            raise
+        except FileNotFoundError:
+            error_logger.error("dbt command not found.")
             raise
 
 
+etl = ETL(run_extraction=False, run_transformation_and_load=False, run_dbt=True)
 
-
-etl = ETL(False, True)
 if __name__ == "__main__":
-
     try:
         if etl.run_extraction:
             etl.extract()
@@ -73,13 +97,18 @@ if __name__ == "__main__":
 
             etl.extractor.compact_shards(etl.shard_dir, etl.compact_dir)
 
-        if etl.run_transformation_and_load:
+        elif etl.run_transformation_and_load and etl.run_dbt:
             etl.transform_and_load()
+            etl.run_dbt_models()
+
+        elif etl.run_transformation_and_load:
+            etl.transform_and_load()
+
+        elif etl.run_dbt:
+            etl.run_dbt_models()
 
         progress_logger.info(f"PIPELINE SUCCESSFUL! HIGH FIVE!")
 
     except Exception as e:
         progress_logger.error(f"Sorry o, pipeline failed: {e}")
         raise
-
-

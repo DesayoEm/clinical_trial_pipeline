@@ -8,4 +8,4 @@ etl/data
 *.log
 /logs
 decisions.txt
-/data
+/datad
