@@ -13,7 +13,7 @@ The pipeline ingests clinical trial data from ClinicalTrials.gov API, stages it 
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                    EXTRACTION LAYER                     │
-│  API → Parquet Shards (crash-resilient, stateful)       │
+│  API -> Parquet Shards (crash-resilient, stateful)       │
 │               Rate Limited: 50 req/min                  │
 │                         
                        COMPACTION                         │
@@ -24,7 +24,7 @@ The pipeline ingests clinical trial data from ClinicalTrials.gov API, stages it 
                            V
 ┌─────────────────────────────────────────────────────────┐
 │             TRANSFORMATION/LOADING LAYER                │
-│    Parquet → Pandas (flatten) -> Postgres Staging       │
+│    Parquet -> Pandas (flatten) -> Postgres Staging       │
 │                 (Structured tables)                     │
 └─────────────────────────────────────────────────────────┘
                            |
@@ -56,8 +56,10 @@ ClinicalTrials.gov uses token-based pagination. You can't jump to a page without
 
 On restart after a crash, the program reads the last token and last loaded page, and resume extraction without re-calling previous API pages.
 
-**Implementation:** I Initialized the `Extractor` class with `last_saved_page`, `last_saved_token`, and `next_page_url`. I also persisted state in `states/last_extraction_result.py`, 
-`states/last_shard_path.py`, and `last_token.py`
+**Implementation:** 
+
+- I Initialized the `Extractor` class with `last_saved_page`, `last_saved_token`, and `next_page_url`. 
+- Then track and persist state in `states/last_extraction_result.py`, `states/last_shard_path.py`, and `states/last_token.py` after each API call.
 
 File writes are unconventional, but I think it makes sense for a locally built and managed stack.
 

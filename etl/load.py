@@ -44,7 +44,7 @@ class Loader:
             progress_logger.info("All tables loaded successfully!")
 
         except Exception as e:
-            error_logger.error(f"Don't cry my love, Load failed, rolling back: {str(e)}")
+            error_logger.error(f"Load failed, rolling back: {str(e)}")
             raise
 
         finally:

@@ -14,14 +14,15 @@ class ETL:
         self.run_transformation_and_load = run_transformation_and_load
         self.run_dbt = run_dbt
 
-        self.file_date = date.today().strftime("%Y-%m-%d")
-
         # directories for current date
+        self.file_date = date.today().strftime("%Y-%m-%d")
         self.shard_dir = f"{config.SHARD_STORAGE_DIR}/{self.file_date}"
         self.compact_dir = f"{config.COMPACTED_STORAGE_DIR}/{self.file_date}"
 
+        self.dbt_dir = config.DBT_DIR
         self.columns_to_read = config.COLUMNS_TO_READ
-        self.extractor = Extractor(timeout=10, max_retries=3, pages_to_load=2)
+
+        self.extractor = Extractor(timeout=10, max_retries=3, pages_to_load=1000)
         self.transformer = Transformer(self.compact_dir)
         self.loader = Loader()
 
@@ -54,7 +55,8 @@ class ETL:
 
 
 
-    def run_dbt_models(self, dbt_project_dir=None, models=None):
+    @staticmethod
+    def run_dbt_models(dbt_project_dir):
         """Execute dbt run command after data loading"""
         progress_logger.info("Starting dbt run...")
 
@@ -99,16 +101,16 @@ if __name__ == "__main__":
 
         elif etl.run_transformation_and_load and etl.run_dbt:
             etl.transform_and_load()
-            etl.run_dbt_models()
+            etl.run_dbt_models(etl.dbt_dir)
 
         elif etl.run_transformation_and_load:
             etl.transform_and_load()
 
         elif etl.run_dbt:
-            etl.run_dbt_models()
+            etl.run_dbt_models(etl.dbt_dir)
 
         progress_logger.info(f"PIPELINE SUCCESSFUL! HIGH FIVE!")
 
     except Exception as e:
-        progress_logger.error(f"Sorry o, pipeline failed: {e}")
+        progress_logger.error(f"Sorry, pipeline failed: {e}")
         raise

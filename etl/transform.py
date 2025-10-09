@@ -142,17 +142,17 @@ class Transformer:
             'study_key': study_key,
             'nct_id': nct_id,
 
-            #identification
+
             'brief_title': self.safe_get(protocol, 'identificationModule', 'briefTitle'),
             'official_title': self.safe_get(protocol, 'identificationModule', 'officialTitle'),
             'acronym': self.safe_get(protocol, 'identificationModule', 'acronym'),
             'org_study_id': self.safe_get(protocol, 'identificationModule', 'orgStudyIdInfo', 'id'),
 
-            #description
+
             'brief_summary': self.safe_get(protocol, 'descriptionModule', 'briefSummary'),
             'detailed_description': self.safe_get(protocol, 'descriptionModule', 'detailedDescription'),
 
-            #status
+
             'overall_status': self.safe_get(protocol, 'statusModule', 'overallStatus'),
             'status_verified_date': self.safe_get(protocol, 'statusModule', 'statusVerifiedDate'),
 
@@ -172,7 +172,7 @@ class Transformer:
             'source_last_updated_date_type': self.safe_get(protocol, 'statusModule', 'lastUpdatePostDateStruct',
                                                            'type'),
 
-            # design
+
             'study_type': self.safe_get(protocol, 'designModule', 'studyType'),
             'enrollment_count': self.safe_get(protocol, 'designModule', 'enrollmentInfo', 'count'),
             'enrollment_type': self.safe_get(protocol, 'designModule', 'enrollmentInfo', 'type'),
@@ -185,7 +185,7 @@ class Transformer:
             'patient_registry': self.safe_get(protocol, 'designModule', 'patientRegistry'),
             'target_duration': self.safe_get(protocol, 'designModule', 'targetDuration'),
 
-            # Eligibility
+
             'eligibility_criteria': self.safe_get(protocol, 'eligibilityModule', 'eligibilityCriteria'),
             'healthy_volunteers': self.safe_get(protocol, 'eligibilityModule', 'healthyVolunteers'),
             'sex': self.safe_get(protocol, 'eligibilityModule', 'sex'),
@@ -196,7 +196,7 @@ class Transformer:
                 self.safe_get(protocol, 'eligibilityModule', 'maximumAge')
             ),
 
-            #Oversight
+
             'has_dmc': self.safe_get(protocol, 'oversightModule', 'oversightHasDmc'),
             'is_fda_regulated_drug': self.safe_get(protocol, 'oversightModule', 'isFdaRegulatedDrug'),
             'is_fda_regulated_device': self.safe_get(protocol, 'oversightModule', 'isFdaRegulatedDevice'),
