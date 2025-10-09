@@ -1,0 +1,166 @@
+version: 2
+
+models:
+  - name: dim_conditions
+    description: "Dimension table for medical conditions in clinical trials"
+    columns:
+      - name: condition_key
+        tests:
+          - unique
+          - not_null
+
+      - name: condition_name
+        tests:
+          - unique
+          - not_null
+
+      - name: etl_created_at
+        tests:
+          - not_null
+
+  - name: dim_interventions
+    columns:
+      - name: intervention_key
+        tests:
+          - unique
+          - not_null
+
+      - name: intervention_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['DRUG', 'DEVICE', 'BIOLOGICAL', 'PROCEDURE', 'BEHAVIORAL',
+                       'RADIATION', 'GENETIC', 'DIETARY_SUPPLEMENT', 'COMBINATION_PRODUCT',
+                       'DIAGNOSTIC_TEST', 'OTHER']
+
+      - name: intervention_name
+        tests:
+          - not_null
+
+      - name: etl_created_at
+        tests:
+          - not_null
+
+  - name: dim_sites
+    columns:
+      - name: site_key
+        tests:
+          - unique
+          - not_null
+
+      - name: facility_name
+        tests:
+          - not_null
+
+      - name: city
+        tests:
+          - not_null
+
+      - name: site_state
+
+      - name: country
+        tests:
+          - not_null
+
+      - name: etl_created_at
+        tests:
+          - not_null
+
+  - name: dim_sponsor
+    columns:
+      - name: sponsor_key
+        tests:
+          - unique
+          - not_null
+
+      - name: sponsor_name
+        tests:
+          - unique
+          - not_null
+
+      - name: sponsor_class
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['INDUSTRY', 'NIH', 'FED', 'OTHER_GOV', 'NETWORK', 'OTHER', 'INDIV']
+
+      - name: etl_created_at
+        tests:
+          - not_null
+
+  - name: dim_studies
+    columns:
+      - name: study_key
+        tests:
+          - unique
+          - not_null
+
+      - name: nct_id
+        tests:
+          - unique
+          - not_null
+
+      - name: brief_title
+        tests:
+          - not_null
+
+      - name: overall_status
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['RECRUITING', 'ACTIVE_NOT_RECRUITING', 'ENROLLING_BY_INVITATION',
+                       'COMPLETED', 'SUSPENDED', 'TERMINATED', 'WITHDRAWN',
+                       'NOT_YET_RECRUITING', 'AVAILABLE', 'NO_LONGER_AVAILABLE',
+                       'TEMPORARILY_NOT_AVAILABLE', 'APPROVED_FOR_MARKETING',
+                       'WITHHELD', 'UNKNOWN']
+
+      - name: is_active
+        tests:
+          - not_null
+          - accepted_values:
+              values: [true, false]
+
+      - name: study_type
+        tests:
+          - accepted_values:
+              values: ['INTERVENTIONAL', 'OBSERVATIONAL', 'EXPANDED_ACCESS',
+                       'OBSERVATIONAL_PATIENT_REGISTRY']
+
+      - name: allocation
+        tests:
+          - accepted_values:
+              values: ['RANDOMIZED', 'NON_RANDOMIZED', 'NA', 'N/A']
+
+      - name: intervention_model
+        tests:
+          - accepted_values:
+              values: ['SINGLE_GROUP', 'PARALLEL', 'CROSSOVER', 'FACTORIAL',
+                       'SEQUENTIAL']
+
+      - name: primary_purpose
+        tests:
+          - accepted_values:
+              values: ['TREATMENT', 'PREVENTION', 'DIAGNOSTIC', 'SUPPORTIVE_CARE',
+                       'SCREENING', 'HEALTH_SERVICES_RESEARCH', 'BASIC_SCIENCE',
+                       'DEVICE_FEASIBILITY', 'OTHER']
+
+      - name: enrollment_category
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Small', 'Medium', 'Large', 'Unknown']
+
+      - name: age_group
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Pediatric', 'Adults', 'Seniors', 'All Ages']
+
+      - name: sex
+        tests:
+          - accepted_values:
+              values: ['ALL', 'FEMALE', 'MALE']
+
+      - name: etl_created_at
+        tests:
+          - not_null
