@@ -9,7 +9,7 @@ with sponsors_source as (
     {% endif %}
 ),
 
-with sponsors as (
+sponsors as (
     select
         sponsor_key,
         sponsor_name,

@@ -10,7 +10,7 @@ with sites_source as (
     {% endif %}
 ),
 
-with sites as (
+sites as (
     select
         site_key,
         facility_name,

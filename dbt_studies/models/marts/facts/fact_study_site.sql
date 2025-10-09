@@ -18,7 +18,6 @@ final as (
         study_site_key,
         study_key,
         site_key,
-        site_status,
         etl_created_at
     from study_sites_source
 )

@@ -10,7 +10,7 @@ with interventions_source as (
     {% endif %}
 ),
 
-with interventions as (
+interventions as (
     select
         intervention_key,
         intervention_type,

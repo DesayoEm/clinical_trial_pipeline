@@ -4,7 +4,7 @@
 
 
 with studies_source as (
-    select * from {{ source('staging', 'sponsors') }}
+    select * from {{ source('staging', 'studies') }}
     {% if is_incremental() %}
     where etl_created_at > (select max(etl_created_at) from {{ this }})
     {% endif %}

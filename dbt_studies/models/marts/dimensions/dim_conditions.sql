@@ -9,7 +9,7 @@ with conditions_source as (
     {% endif %}
 ),
 
-with conditions as (
+conditions as (
     select
         condition_key,
         condition_name,
