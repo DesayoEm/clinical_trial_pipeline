@@ -4,9 +4,6 @@
 
 with sponsors_source as (
     select * from {{ source('staging', 'sponsors') }}
-    {% if is_incremental() %}
-    where etl_created_at > (select max(etl_created_at) from {{ this }})
-    {% endif %}
 ),
 
 sponsors as (

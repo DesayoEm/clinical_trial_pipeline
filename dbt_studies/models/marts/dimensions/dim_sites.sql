@@ -5,9 +5,6 @@
 
 with sites_source as (
     select * from {{ source('staging', 'sites') }}
-    {% if is_incremental() %}
-    where etl_created_at > (select max(etl_created_at) from {{ this }})
-    {% endif %}
 ),
 
 sites as (
