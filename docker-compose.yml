@@ -1,0 +1,58 @@
+services:
+  pipeline_db:
+    image: postgres:15-alpine
+    container_name: ct-pipeline-postgres-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    ports:
+      - "5433:5432"
+    networks:
+      - netflix-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  ct_pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ct-etl-pipeline
+    depends_on:
+      pipeline_db:
+        condition: service_healthy
+    environment:
+      DB_HOST: localhost
+      DB_PORT: 5432
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DATABASE_CONNECTION_STRING: ${DATABASE_CONNECTION_STRING}
+      SHARD_STORAGE_DIR: ${SHARD_STORAGE_DIR}
+      COMPACTED_STORAGE_DIR: ${COMPACTED_STORAGE_DIR}
+      STATE_MGT_DIR: ${STATE_MGT_DIR}
+
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - ./netflix_titles.csv:/app/data/netflix_titles.csv:ro
+    networks:
+      - pipeline-network
+    restart: "no"
+
+
+networks:
+  - pipeline-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
