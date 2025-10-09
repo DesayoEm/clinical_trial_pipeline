@@ -1,0 +1,16 @@
+version: 1.0.0
+
+sources:
+  - name: staging
+    description: Staging tables in Postgres
+    schema: staging
+    tables:
+      - name: studies
+      - name: conditions
+      - name: interventions
+      - name: sites
+      - name: sponsors
+      - name: study_sites
+      - name: study_conditions
+      - name: study_interventions
+      - name: study_sponsors

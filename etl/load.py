@@ -31,7 +31,7 @@ class Loader:
 
                         df.to_sql(
                             name=table_name,
-                            schema='studies',
+                            schema='staging',
                             con=conn,
                             if_exists='append',
                             index=False,

@@ -20,7 +20,7 @@ class ETL:
         self.compact_dir = f"{config.COMPACTED_STORAGE_DIR}/{self.file_date}"
 
         self.columns_to_read = config.COLUMNS_TO_READ
-        self.extractor = Extractor(timeout=10, max_retries=3,pages_to_load=2)
+        self.extractor = Extractor(timeout=10, max_retries=3,pages_to_load=1000)
         self.transformer = Transformer(self.compact_dir)
         self.loader = Loader()
 
@@ -57,7 +57,7 @@ class ETL:
 
 
 
-etl = ETL(True, False)
+etl = ETL(False, True)
 if __name__ == "__main__":
 
     try:

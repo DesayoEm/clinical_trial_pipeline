@@ -3,7 +3,7 @@ import json
 from typing import Dict, List, Any, Hashable
 import hashlib
 from etl.utils.log_service import progress_logger, error_logger
-
+from datetime import datetime
 
 class Transformer:
     def __init__(self, parquet_path):
@@ -92,14 +92,16 @@ class Transformer:
 
         return df
 
-
-
     def flatten_parquet_to_tables(self, df: pd.DataFrame) -> Dict[str, pd.DataFrame]:
         """Flatten nested structures in parquet DataFrame."""
         progress_logger.info("Flattening parquet data...")
 
-        for idx, row in df.iterrows():
-            protocol = row.get('protocolSection')
+        protocols = df['protocolSection'].tolist()
+        total = len(protocols)
+
+        for idx, protocol in enumerate(protocols):
+            if idx % 1000 == 0 and idx > 0:
+                progress_logger.info(f"Processed {idx}/{total} studies ({idx / total * 100:.1f}%)")
 
             if isinstance(protocol, str):
                 try:
@@ -115,7 +117,6 @@ class Transformer:
             self.extract_study(protocol, idx)
 
         progress_logger.info(f"Extracted {len(self.studies_data)} studies")
-
         return self.transform_to_dataframes()
 
 
@@ -199,6 +200,7 @@ class Transformer:
             'has_dmc': self.safe_get(protocol, 'oversightModule', 'oversightHasDmc'),
             'is_fda_regulated_drug': self.safe_get(protocol, 'oversightModule', 'isFdaRegulatedDrug'),
             'is_fda_regulated_device': self.safe_get(protocol, 'oversightModule', 'isFdaRegulatedDevice'),
+            'etl_created_at': datetime.now().isoformat()
         }
         self.studies_data.append(study_data)
 
@@ -216,7 +218,8 @@ class Transformer:
                 self.sponsors_data.append({
                     'sponsor_key': sponsor_key,
                     'sponsor_name': lead.get('name'),
-                    'sponsor_class': lead.get('class')
+                    'sponsor_class': lead.get('class'),
+                    'etl_created_at': datetime.now().isoformat()
                 })
 
             self.study_sponsors_data.append({
@@ -224,7 +227,8 @@ class Transformer:
                 'study_key': study_key,
                 'sponsor_key': sponsor_key,
                 'is_lead': True,
-                'is_collaborator': False
+                'is_collaborator': False,
+                'etl_created_at': datetime.now().isoformat()
 
             })
 
@@ -246,7 +250,8 @@ class Transformer:
                         self.sponsors_data.append({
                             'sponsor_key': sponsor_key,
                             'sponsor_name': collaborator.get('name'),
-                            'sponsor_class': collaborator.get('class')
+                            'sponsor_class': collaborator.get('class'),
+                            'etl_created_at': datetime.now().isoformat()
                         })
 
                     self.study_sponsors_data.append({
@@ -254,7 +259,8 @@ class Transformer:
                         'study_key': study_key,
                         'sponsor_key': sponsor_key,
                         'is_lead': False,
-                        'is_collaborator': True
+                        'is_collaborator': True,
+                        'etl_created_at': datetime.now().isoformat()
                         })
 
 
@@ -275,13 +281,15 @@ class Transformer:
                 if not any(c['condition_key'] == condition_key for c in self.conditions_data):
                         self.conditions_data.append({
                             'condition_key': condition_key,
-                            'condition_name': condition
+                            'condition_name': condition,
+                            'etl_created_at': datetime.now().isoformat()
                             })
 
                 self.study_conditions_data.append({
                     'study_condition_key': self.generate_key(study_key, condition_key),
                     'study_key': study_key,
-                    'condition_key': condition_key
+                    'condition_key': condition_key,
+                    'etl_created_at': datetime.now().isoformat()
                     })
 
 
@@ -311,13 +319,15 @@ class Transformer:
                          'intervention_key': intervention_key,
                         'intervention_type': intervention_type,
                         'intervention_name': intervention_name,
-                        'intervention_description': intervention.get('description')
+                        'intervention_description': intervention.get('description'),
+                        'etl_created_at': datetime.now().isoformat()
                     })
 
                 self.study_interventions_data.append({
                     'study_intervention_key': self.generate_key(study_key, intervention_key),
                     'study_key': study_key,
-                    'intervention_key': intervention_key
+                    'intervention_key': intervention_key,
+                    'etl_created_at': datetime.now().isoformat()
                 })
 
 
@@ -351,7 +361,8 @@ class Transformer:
                         'zip': location.get('zip'),
                         'country': country,
                         'latitude': geo.get('lat') if geo else None,
-                        'longitude': geo.get('lon') if geo else None
+                        'longitude': geo.get('lon') if geo else None,
+                        'etl_created_at': datetime.now().isoformat()
                     })
 
                 self.study_sites_data.append({
@@ -373,7 +384,8 @@ class Transformer:
             'study_sponsors': pd.DataFrame(self.study_sponsors_data),
             'study_conditions': pd.DataFrame(self.study_conditions_data),
             'study_interventions': pd.DataFrame(self.study_interventions_data),
-            'study_sites': pd.DataFrame(self.study_sites_data)
+            'study_sites': pd.DataFrame(self.study_sites_data),
+            'etl_created_at': datetime.now().isoformat()
         }
 
         for name, df in dataframes.items():
