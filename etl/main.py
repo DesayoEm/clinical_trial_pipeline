@@ -52,6 +52,7 @@ class ETL:
 
         except Exception as e:
             error_logger.error(f"Transformation failed with error: {str(e)}")
+            raise
 
 
 
@@ -72,21 +73,44 @@ class ETL:
                 check=True
             )
 
-            progress_logger.info(f"dbt run output:\n{result.stdout}")
+            if result.stdout:
+                progress_logger.info(f"dbt run output:\n{result.stdout}")
+
+            if result.stderr:
+                error_logger.error(f"dbt run stderr:\n{result.stderr}")
+
+            if result.returncode != 0:
+                error_logger.error(f"dbt run failed with exit code {result.returncode}")
+                raise subprocess.CalledProcessError(
+                    result.returncode,
+                    dbt_command,
+                    output=result.stdout,
+                    stderr=result.stderr
+                )
             progress_logger.info("dbt run COMPLETE YAY!")
 
         except subprocess.CalledProcessError as e:
             error_logger.error(f"dbt run failed with error:\n{e.stderr}")
             raise
+
         except FileNotFoundError:
             error_logger.error("dbt command not found.")
             raise
 
 
-etl = ETL(run_extraction=True, run_transformation_and_load=True, run_dbt=True)
+#For docker production, cron will extract, and transform at 12 am, and run dbt at 1pm
+#run_dbt should be False if running from docker as it has its own container, but can be true if running locally
+etl = ETL(run_extraction=True, run_transformation_and_load=True, run_dbt=False)
+
 
 if __name__ == "__main__":
     try:
+        if (not etl.run_extraction and not
+            etl.run_transformation_and_load and not etl.run_dbt
+        ):
+            error_logger.error("You must select a process to run")
+            exit(1)
+
         if etl.run_extraction:
             etl.extract()
             os.makedirs(etl.shard_dir, exist_ok=True)
@@ -99,14 +123,11 @@ if __name__ == "__main__":
 
             etl.extractor.compact_shards(etl.shard_dir, etl.compact_dir)
 
-        elif etl.run_transformation_and_load and etl.run_dbt:
-            etl.transform_and_load()
-            etl.run_dbt_models(etl.dbt_dir)
-
-        elif etl.run_transformation_and_load:
+        if etl.run_transformation_and_load:
             etl.transform_and_load()
 
-        elif etl.run_dbt:
+
+        if etl.run_dbt:
             etl.run_dbt_models(etl.dbt_dir)
 
         progress_logger.info(f"PIPELINE SUCCESSFUL!")

@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     PAGES_BASE_URL: str
     TOKEN_FILE: str
     COMPOSE_FILE: str = "docker-compose.yml"
-    COLUMNS_TO_READ: List  = columns_to_read,
+    COLUMNS_TO_READ: List  = columns_to_read
     DBT_DIR: str
 
     model_config = SettingsConfigDict(

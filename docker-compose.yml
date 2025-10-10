@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   pipeline_db:
     image: postgres:15-alpine
@@ -37,15 +39,24 @@ services:
       DB_USER: ${DB_USER}
       DB_PASSWORD: ${DB_PASSWORD}
       DATABASE_URL: ${DATABASE_URL}
-      SHARD_STORAGE_DIR: ${SHARD_STORAGE_DIR}
-      COMPACTED_STORAGE_DIR: ${COMPACTED_STORAGE_DIR}
-      STATE_MGT_DIR: ${STATE_MGT_DIR}
+      SHARD_STORAGE_DIR: /app/data/shards
+      COMPACTED_STORAGE_DIR: /app/data/compacted
+      STATE_MGT_DIR: /app/states
+      DBT_DIR: /app/dbt_studies
       PYTHONUNBUFFERED: 1
     volumes:
-      - ./netflix_titles.csv:/app/data/netflix_titles.csv:ro
+      - ./etl:/app/etl
+        - ./dbt_studies:/app/dbt_studies
+        - pipeline_data:/app/data  
+        - pipeline_states:/app/states
     networks:
       - pipeline-network
-    restart: "no"
+    command: >
+      command: >
+          sh -c "
+            echo '0 0 * * * cd /app && python -m etl.main >> /var/log/cron.log 2>&1' > /etc/crontabs/root &&
+            crond -f -l 2
+          "
 
   dbt:
     build:
@@ -53,16 +64,28 @@ services:
       dockerfile: Dockerfile.dbt
     container_name: clinical_trials_dbt
     depends_on:
-      - postgres
+      etl:
+        condition: service_started
+      pipeline_db:
+          condition: service_healthy
     environment:
       DATABASE_URL: ${DATABASE_URL}
     volumes:
-      - ./dbt:/app/dbt
-    command: dbt run --project-dir /app/dbt
+       - ./dbt_studies:/app/dbt_studies
+    command: >
+      sh -c "
+        echo '0 1 * * * cd /app/dbt_studies && dbt run >> /var/log/dbt-cron.log 2>&1' > /etc/crontabs/root &&
+        crond -f -l 2
+      "
+
 networks:
   pipeline-network:
     driver: bridge
 
 volumes:
   postgres_data:
+    driver: local
+  pipeline_data:
+    driver: local
+  pipeline_states:
     driver: local

@@ -13,54 +13,70 @@ The pipeline ingests clinical trial data from ClinicalTrials.gov API, stages it 
 [See full architecture](documentation/ARCHITECTURE.md)
 ---
 
-## Configuration
+## Prerequisites
+
+- Docker and Docker Compose installed
+- git
+
+## Setup and Configuration
+
+
+
+### 1. Clone the Repository
+```bash
+
+```bash
+git clone <your-repo-url>
+cd ct_pipeline
+```
+
 
 Create a `.env` file in the root directory with the following variables:
 
 ```env
-#API
-
+# API Configuration
 BASE_URL=https://clinicaltrials.gov/api/v2/studies?pageSize=100
 PAGES_BASE_URL=https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=
 
-#DATABASE
-
+# Database Configuration 
 DB_HOST=pipeline_db
 DB_PORT=5432
 DB_NAME=clinical_trials
-DB_USER=your username
-DB_PASSWORD=your_password
+DB_USER=postgres
+DB_PASSWORD=your_secure_password
+DATABASE_URL=postgresql+psycopg2://postgres:your_secure_password@pipeline_db:5432/clinical_trials
 
-#STORAGE
-DATABASE_URL='postgresql+psycopg2://username:password@pipeline_db:5432/clinical_trials'
-SHARD_STORAGE_DIR=your/parquet/shards/directory
-COMPACTED_STORAGE_DIR=your/compacted/parquet/directory
-STATE_MGT_DIR=your/state/management/directory
-DBT_DIR=your/dbt/project/directory
+#storage Paths (Docker paths)
+SHARD_STORAGE_DIR=/app/data/shards
+COMPACTED_STORAGE_DIR=/app/data/compacted
+STATE_MGT_DIR=/app/states
+DBT_DIR=/app/dbt_studies
+
+# Docker Compose
 COMPOSE_FILE=docker-compose.yml
 ```
-
-## Setup
-
-### Clone the Repository
-
-```bash
-git clone <your-repo-url>
-cd clinical_trial-pipeline
-```
-
-
+**Note:** For running outside Docker, update the storage paths to your local directories, anf use localhost for the db host
 ##  Running the Pipeline
 
+###  One-time Manual Run
 ```bash
-docker-compose build etl
+# Build and run all services once
+docker-compose up --build
 
-docker-compose up -d pipeline_db
+# Stop when done
+docker-compose down
 
-docker-compose ps studies
+```
+###   Enable Daily Automated Runs
+```bash
+# Start services with cron enabled (etl daily at 12 AM, dbt at 1 AM)
+docker-compose up -d
 
-docker-compose run --rm etl
+# Check logs
+docker logs -f ct-etl-pipeline
 
+# Stop automated runs
+docker-compose down
 ```
 
 ### Cleaning Up

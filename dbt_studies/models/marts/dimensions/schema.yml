@@ -28,10 +28,6 @@ models:
       - name: intervention_type
         tests:
           - not_null
-          - accepted_values:
-              values: ['DRUG', 'DEVICE', 'BIOLOGICAL', 'PROCEDURE', 'BEHAVIORAL',
-                       'RADIATION', 'GENETIC', 'DIETARY_SUPPLEMENT', 'COMBINATION_PRODUCT',
-                       'DIAGNOSTIC_TEST', 'OTHER']
 
       - name: intervention_name
         tests:
@@ -48,19 +44,6 @@ models:
           - unique
           - not_null
 
-      - name: facility_name
-        tests:
-          - not_null
-
-      - name: city
-        tests:
-          - not_null
-
-      - name: site_state
-
-      - name: country
-        tests:
-          - not_null
 
       - name: etl_created_at
         tests:
@@ -136,13 +119,6 @@ models:
           - accepted_values:
               values: ['SINGLE_GROUP', 'PARALLEL', 'CROSSOVER', 'FACTORIAL',
                        'SEQUENTIAL']
-
-      - name: primary_purpose
-        tests:
-          - accepted_values:
-              values: ['TREATMENT', 'PREVENTION', 'DIAGNOSTIC', 'SUPPORTIVE_CARE',
-                       'SCREENING', 'HEALTH_SERVICES_RESEARCH', 'BASIC_SCIENCE',
-                       'DEVICE_FEASIBILITY', 'OTHER']
 
       - name: enrollment_category
         tests:

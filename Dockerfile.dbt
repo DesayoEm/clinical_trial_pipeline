@@ -1,11 +1,12 @@
-FROM python:3.11-slim
+FROM python:3.12-alpine
 
 WORKDIR /app
 
-# Install dbt
-RUN pip install --no-cache-dir dbt-postgres==1.7.0
+RUN apk add --no-cache dcron && \
+    pip install --no-cache-dir dbt-core dbt-postgres
 
-# Copy dbt project
-COPY dbt/ ./dbt/
+COPY dbt_studies /app/dbt_studies
 
-CMD ["dbt", "run", "--project-dir", "/app/dbt"]
+RUN mkdir -p /var/log && chmod -R 777 /var/log
+
+CMD ["dbt", "run", "--project-dir", "/app/dbt_studies"]
