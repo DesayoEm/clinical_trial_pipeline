@@ -46,9 +46,9 @@ services:
       PYTHONUNBUFFERED: 1
     volumes:
       - ./etl:/app/etl
-        - ./dbt_studies:/app/dbt_studies
-        - pipeline_data:/app/data  
-        - pipeline_states:/app/states
+      - ./dbt_studies:/app/dbt_studies
+      - pipeline_data:/app/data
+      - pipeline_states:/app/states
     networks:
       - pipeline-network
     command: >

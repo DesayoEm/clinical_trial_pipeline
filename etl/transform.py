@@ -75,33 +75,9 @@ class Transformer:
 
 
     @staticmethod
-    # def read_parquet(file_path: str, columns: List) -> pd.DataFrame | None:
-    #     """Read parquet file with optional column selection."""
-    #     progress_logger.info(f"Reading parquet file at {file_path}")
-    #
-    #     if columns:
-    #         df = pd.read_parquet(file_path, columns=columns)
-    #         progress_logger.info(f"Read {len(df)} rows, {len(columns)} columns")
-    #     else:
-    #         df = pd.read_parquet(file_path)
-    #         progress_logger.info(f"Read {len(df)} rows, {len(df.columns)} columns")
-    #
-    #     progress_logger.info(f"Read {len(df)} rows")
-    #     progress_logger.info(f"Columns: {df.columns.tolist()}")
-    #     progress_logger.info(f"First row keys: {list(df.iloc[0].keys()) if len(df) > 0 else 'empty'}")
-    #
-    #     return df
-
-    def read_parquet(file_path: str, columns: List | None) -> pd.DataFrame | None:
+    def read_parquet(file_path: str, columns: List) -> pd.DataFrame | None:
         """Read parquet file with optional column selection."""
         progress_logger.info(f"Reading parquet file at {file_path}")
-
-        # DEBUG: Print what we're receiving
-        progress_logger.info(f"DEBUG - columns parameter type: {type(columns)}")
-        progress_logger.info(f"DEBUG - columns parameter value: {columns}")
-        if columns:
-            progress_logger.info(f"DEBUG - first element type: {type(columns[0])}")
-            progress_logger.info(f"DEBUG - first element value: {columns[0]}")
 
         if columns:
             df = pd.read_parquet(file_path, columns=columns)
@@ -115,6 +91,7 @@ class Transformer:
         progress_logger.info(f"First row keys: {list(df.iloc[0].keys()) if len(df) > 0 else 'empty'}")
 
         return df
+
 
     def flatten_parquet_to_tables(self, df: pd.DataFrame) -> Dict[str, pd.DataFrame]:
         """Flatten nested structures in parquet DataFrame."""

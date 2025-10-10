@@ -1,6 +1,6 @@
 # ClinicalTrials.gov ELT Pipeline
 
-*This is a locally managed ETL - ELT hybrid pipeline built with production principles as a guide: fault tolerance, and separation of concerns.*
+*This is an ETL - ELT hybrid pipeline built with production principles as a guide: fault tolerance, and separation of concerns.*
 
 The pipeline ingests clinical trial data from ClinicalTrials.gov API, stages it in PostgreSQL, and transforms it using dbt into a dimensional model for analytics.
 

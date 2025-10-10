@@ -98,8 +98,8 @@ class ETL:
             raise
 
 
-#For docker production, cron will extract, and transform at 12 am, and run dbt at 1pm
-#run_dbt should be False if running from docker as it has its own container, but can be true if running locally
+#For docker production, cron will run etl at 12 am, and run dbt at 1pm
+#run_dbt must be False if running from docker as it has its own container, but can be true if running locally
 etl = ETL(run_extraction=True, run_transformation_and_load=True, run_dbt=False)
 
 

@@ -1,19 +1,24 @@
-FROM python:3.11-slim
+FROM python:3.12-alpine
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y \
+RUN apk add --no-cache \
+    postgresql-dev \
     gcc \
-    postgresql-client \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
-
+    musl-dev \
+    dcron \
+    && rm -rf /var/cache/apk/*
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ../../Downloads .
+COPY etl /app/etl
+COPY dbt_studies /app/dbt_studies
+COPY config.py /app/config.py
 
 ENV PYTHONPATH=/app
 
-CMD ["python", "etl/main.py"]
+RUN mkdir -p /app/data/shards /app/data/compacted /app/states /var/log && \
+    chmod -R 777 /app/data /app/states /var/log
+
+CMD ["python", "-m", "etl.main"]
