@@ -22,7 +22,7 @@ services:
       retries: 5
       start_period: 30s
 
-  ct_pipeline:
+  etl:
     build:
       context: .
       dockerfile: Dockerfile
@@ -36,7 +36,7 @@ services:
       DB_NAME: ${DB_NAME}
       DB_USER: ${DB_USER}
       DB_PASSWORD: ${DB_PASSWORD}
-      DATABASE_CONNECTION_STRING: ${DATABASE_CONNECTION_STRING}
+      DATABASE_URL: ${DATABASE_URL}
       SHARD_STORAGE_DIR: ${SHARD_STORAGE_DIR}
       COMPACTED_STORAGE_DIR: ${COMPACTED_STORAGE_DIR}
       STATE_MGT_DIR: ${STATE_MGT_DIR}
@@ -47,6 +47,18 @@ services:
       - pipeline-network
     restart: "no"
 
+  dbt:
+    build:
+      context: .
+      dockerfile: Dockerfile.dbt
+    container_name: clinical_trials_dbt
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+    volumes:
+      - ./dbt:/app/dbt
+    command: dbt run --project-dir /app/dbt
 networks:
   pipeline-network:
     driver: bridge

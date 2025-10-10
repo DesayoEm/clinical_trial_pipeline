@@ -109,7 +109,7 @@ if __name__ == "__main__":
         elif etl.run_dbt:
             etl.run_dbt_models(etl.dbt_dir)
 
-        progress_logger.info(f"PIPELINE SUCCESSFUL! HIGH FIVE!")
+        progress_logger.info(f"PIPELINE SUCCESSFUL!")
 
     except Exception as e:
         progress_logger.error(f"Sorry, pipeline failed: {e}")

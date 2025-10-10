@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     DB_NAME: str
     DB_USER: str
     DB_PASSWORD: str
-    DATABASE_CONNECTION_STRING: str
+    DATABASE_URL: str
     TOKEN_FILE: str
     SHARD_STORAGE_DIR: str
     COMPACTED_STORAGE_DIR: str
