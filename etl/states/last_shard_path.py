@@ -1,1 +1,1 @@
-shard_path = "C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-09"
+shard_path = "C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10"

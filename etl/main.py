@@ -22,7 +22,7 @@ class ETL:
         self.dbt_dir = config.DBT_DIR
         self.columns_to_read = config.COLUMNS_TO_READ
 
-        self.extractor = Extractor(timeout=10, max_retries=3, pages_to_load=1000)
+        self.extractor = Extractor(timeout=10, max_retries=3, pages_to_load=100)
         self.transformer = Transformer(self.compact_dir)
         self.loader = Loader()
 
@@ -83,7 +83,7 @@ class ETL:
             raise
 
 
-etl = ETL(run_extraction=False, run_transformation_and_load=False, run_dbt=True)
+etl = ETL(run_extraction=True, run_transformation_and_load=True, run_dbt=True)
 
 if __name__ == "__main__":
     try:

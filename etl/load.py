@@ -5,7 +5,7 @@ from etl.utils.log_service import progress_logger, error_logger
 
 class Loader:
     def __init__(self):
-        self.conn_str = config.DATABASE_CONNECTION_STRING
+        self.conn_str = config.DATABASE_URL
 
     def load_to_postgres(self, dataframes: pd.DataFrame):
         engine = create_engine(self.conn_str)
