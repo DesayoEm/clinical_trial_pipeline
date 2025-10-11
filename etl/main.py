@@ -3,6 +3,7 @@ import os
 import subprocess
 from etl.load import Loader
 from etl.transform import Transformer
+from etl.utils.exceptions import NoProcessToRun
 from etl.utils.log_service import progress_logger, error_logger
 from config import config
 from etl.extract import Extractor
@@ -22,7 +23,7 @@ class ETL:
         self.dbt_dir = config.DBT_DIR
         self.columns_to_read = config.COLUMNS_TO_READ
 
-        self.extractor = Extractor(timeout=10, max_retries=3, pages_to_load=100)
+        self.extractor = Extractor(timeout=10, max_retries=3, pages_to_load=100)#test run
         self.transformer = Transformer(self.compact_dir)
         self.loader = Loader()
 
@@ -31,7 +32,7 @@ class ETL:
 
         if pages_extracted >= self.extractor.pages_to_load:
             progress_logger.info(
-                f"Already have {pages_extracted} pages, no extraction needed."
+                f"Already have {pages_extracted} pages, no further extraction needed."
             )
             return
 
@@ -45,10 +46,10 @@ class ETL:
         progress_logger.info(f"Transforming {self.extractor.pages_to_load} pages")
         try:
             df = self.transformer.read_selective_parquet_columns(self.compact_dir, self.columns_to_read)
-            progress_logger.info(f"TRANSFORMATION COMPLETE YAY!")
+            progress_logger.info(f"TRANSFORMATION COMPLETE!")
 
             self.loader.load_to_postgres(df)
-            progress_logger.info(f"LOADING COMPLETE YAY!")
+            progress_logger.info(f"LOADING COMPLETE!")
 
         except Exception as e:
             error_logger.error(f"Transformation failed with error: {str(e)}")
@@ -109,7 +110,7 @@ if __name__ == "__main__":
             etl.run_transformation_and_load and not etl.run_dbt
         ):
             error_logger.error("You must select a process to run")
-            exit(1)
+            raise NoProcessToRun()
 
         if etl.run_extraction:
             etl.extract()

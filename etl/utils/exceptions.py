@@ -21,3 +21,7 @@ class FileCompactionError(CTPException):
 class MissingStateError(CTPException):
     def __init__(self, state: str):
         self.log = f"{state} could not be determined"
+
+class NoProcessToRun(CTPException):
+    def __init__(self):
+        self.log = f"No process selected to run. Check your ETL class instantiation"

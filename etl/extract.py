@@ -80,7 +80,11 @@ class Extractor:
                     next_page_token = data.get("nextPageToken")
 
                     if not next_page_token:
-                        raise NextPageError(self.current_page)
+                        progress_logger.info(
+                            f"Next page not found on page {self.current_page}"
+                            f"Check state directory for token to this page")
+
+                        return self.save_response(data)
 
                     with open("etl/states/last_token.py", "w") as f:
                         f.write(
