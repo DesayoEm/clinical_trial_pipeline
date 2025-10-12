@@ -26,7 +26,7 @@ The pipeline ingests clinical trial data from ClinicalTrials.gov API, stages it 
 ```bash
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/DesayoEm/clinical_trial_pipeline
 cd ct_pipeline
 ```
 

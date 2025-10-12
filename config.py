@@ -12,14 +12,11 @@ class Settings(BaseSettings):
     DB_USER: str
     DB_PASSWORD: str
     DATABASE_URL: str
-    TOKEN_FILE: str
     SHARD_STORAGE_DIR: str
     COMPACTED_STORAGE_DIR: str
     STATE_MGT_DIR: str
-    DOCKER_STORAGE_DIR: str
     BASE_URL: str
     PAGES_BASE_URL: str
-    TOKEN_FILE: str
     COMPOSE_FILE: str = "docker-compose.yml"
     COLUMNS_TO_READ: List  = columns_to_read
     DBT_DIR: str
