@@ -19,7 +19,7 @@ COPY config.py /app/config.py
 ENV PYTHONPATH=/app
 
 RUN mkdir -p /app/data/shards /app/data/compacted /app/etl/states /var/log && \
-    chmod -R 777 /app/data /app/etl/states /var/log \
+    chmod -R 777 /app/data /app/etl/states /var/log
 
 
 CMD ["bash", "-c", "mkdir -p state && \
