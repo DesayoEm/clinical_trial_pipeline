@@ -48,7 +48,7 @@ services:
       - ./etl:/app/etl
       - ./dbt_studies:/app/dbt_studies
       - pipeline_data:/app/data
-      - pipeline_states:/app/states
+      - pipeline_states:/app/etl/states
     networks:
       - pipeline-network
     command: >
