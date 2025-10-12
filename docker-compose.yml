@@ -52,11 +52,10 @@ services:
     networks:
       - pipeline-network
     command: >
-      command: >
-          sh -c "
-            echo '0 0 * * * cd /app && python -m etl.main >> /var/log/cron.log 2>&1' > /etc/crontabs/root &&
-            crond -f -l 2
-          "
+        sh -c "
+        echo '0 0 * * * cd /app && python -m etl.main >> /var/log/cron.log 2>&1' > /etc/crontabs/root &&
+        crond -f -l 2
+      "
 
   dbt:
     build:

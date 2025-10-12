@@ -6,4 +6,4 @@ __pycache__/
 *.pyc
 etl/data
 decisions.txt
-/datad
+/data
