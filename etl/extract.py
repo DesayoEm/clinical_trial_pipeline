@@ -46,7 +46,10 @@ class Extractor:
         state_file = f"{config.STATE_MGT_DIR}/last_extraction_result.py"
 
         if not os.path.exists(state_file):
-            raise MissingStateError("extraction_result")
+            with open("etl/states/last_extraction_result.py", "w") as f:
+                f.write(
+                    f'result = "SUCCESS"\n'
+                )#start all over since state cannot be determined
 
         if last_extraction_result.result == "SUCCESS":
             return 0 #start fresh extraction as last one was successful
