@@ -1,0 +1,1244 @@
+2025-10-10 05:13:28,343 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:13:28,343 - ct_pipeline - ERROR - You must select a process to run
+2025-10-10 05:13:28,343 - ct_pipeline - INFO - PIPELINE SUCCESSFUL!
+2025-10-10 05:14:11,514 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:14:11,514 - ct_pipeline - ERROR - You must select a process to run
+2025-10-10 05:15:32,510 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:15:32,510 - ct_pipeline - ERROR - You must select a process to run
+2025-10-10 05:19:06,535 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:19:06,536 - ct_pipeline - ERROR - You must select a process to run
+2025-10-10 05:19:19,594 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:19:19,594 - ct_pipeline - ERROR - You must select a process to run
+2025-10-10 05:19:34,277 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:19:34,278 - ct_pipeline - ERROR - You must select a process to run
+2025-10-10 05:19:49,074 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:19:49,075 - ct_pipeline - INFO - Starting from page 1
+2025-10-10 05:19:49,737 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100 
+ Last loaded page is page 1
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qfp9oYfek2_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qfp9oYfek2_g
+2025-10-10 05:19:49,774 - ct_pipeline - INFO - Successfully saved page 1 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/1.parquet
+2025-10-10 05:19:49,776 - ct_pipeline - INFO - Starting from page 2
+2025-10-10 05:19:50,166 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qfp9oYfek2_g 
+ Last loaded page is page 2
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpVvY_aj1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpVvY_aj1Pg
+2025-10-10 05:19:50,192 - ct_pipeline - INFO - Successfully saved page 2 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/2.parquet
+2025-10-10 05:19:50,194 - ct_pipeline - INFO - Starting from page 3
+2025-10-10 05:19:50,817 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpVvY_aj1Pg 
+ Last loaded page is page 3
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZtYfGk1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZtYfGk1Pg
+2025-10-10 05:19:50,844 - ct_pipeline - INFO - Successfully saved page 3 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/3.parquet
+2025-10-10 05:19:50,846 - ct_pipeline - INFO - Starting from page 4
+2025-10-10 05:19:51,382 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZtYfGk1Pg 
+ Last loaded page is page 4
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep9mY_Sk3_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep9mY_Sk3_g
+2025-10-10 05:19:51,410 - ct_pipeline - INFO - Successfully saved page 4 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/4.parquet
+2025-10-10 05:19:51,412 - ct_pipeline - INFO - Starting from page 5
+2025-10-10 05:19:52,001 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep9mY_Sk3_g 
+ Last loaded page is page 5
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe55tZfKn3_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe55tZfKn3_g
+2025-10-10 05:19:52,028 - ct_pipeline - INFO - Successfully saved page 5 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/5.parquet
+2025-10-10 05:19:52,030 - ct_pipeline - INFO - Starting from page 6
+2025-10-10 05:19:52,487 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe55tZfKn3_g 
+ Last loaded page is page 6
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJBnY_Cj3vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJBnY_Cj3vg
+2025-10-10 05:19:52,531 - ct_pipeline - INFO - Successfully saved page 6 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/6.parquet
+2025-10-10 05:19:52,535 - ct_pipeline - INFO - Starting from page 7
+2025-10-10 05:19:53,149 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJBnY_Cj3vg 
+ Last loaded page is page 7
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep5sY_Sj3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep5sY_Sj3fg
+2025-10-10 05:19:53,186 - ct_pipeline - INFO - Successfully saved page 7 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/7.parquet
+2025-10-10 05:19:53,189 - ct_pipeline - INFO - Starting from page 8
+2025-10-10 05:19:53,647 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep5sY_Sj3fg 
+ Last loaded page is page 8
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZNqZPCj1fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZNqZPCj1fg
+2025-10-10 05:19:53,682 - ct_pipeline - INFO - Successfully saved page 8 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/8.parquet
+2025-10-10 05:19:53,684 - ct_pipeline - INFO - Starting from page 9
+2025-10-10 05:19:54,250 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZNqZPCj1fg 
+ Last loaded page is page 9
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qf5doZvms2Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qf5doZvms2Pg
+2025-10-10 05:19:54,280 - ct_pipeline - INFO - Successfully saved page 9 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/9.parquet
+2025-10-10 05:19:54,282 - ct_pipeline - INFO - Starting from page 10
+2025-10-10 05:19:54,836 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qf5doZvms2Pg 
+ Last loaded page is page 10
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJBsZ_Og3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJBsZ_Og3fg
+2025-10-10 05:19:54,865 - ct_pipeline - INFO - Successfully saved page 10 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/10.parquet
+2025-10-10 05:19:54,868 - ct_pipeline - INFO - Starting from page 11
+2025-10-10 05:19:55,463 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJBsZ_Og3fg 
+ Last loaded page is page 11
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpRmY_Sm2_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpRmY_Sm2_g
+2025-10-10 05:19:55,497 - ct_pipeline - INFO - Successfully saved page 11 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/11.parquet
+2025-10-10 05:19:55,499 - ct_pipeline - INFO - Starting from page 12
+2025-10-10 05:19:56,048 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpRmY_Sm2_g 
+ Last loaded page is page 12
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZNnZvCi2fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZNnZvCi2fg
+2025-10-10 05:19:56,085 - ct_pipeline - INFO - Successfully saved page 12 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/12.parquet
+2025-10-10 05:19:56,088 - ct_pipeline - INFO - Starting from page 13
+2025-10-10 05:19:56,651 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZNnZvCi2fg 
+ Last loaded page is page 13
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJoZvCt3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJoZvCt3fg
+2025-10-10 05:19:56,684 - ct_pipeline - INFO - Successfully saved page 13 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/13.parquet
+2025-10-10 05:19:56,687 - ct_pipeline - INFO - Starting from page 14
+2025-10-10 05:19:57,352 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJoZvCt3fg 
+ Last loaded page is page 14
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJRrZvOj2fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJRrZvOj2fg
+2025-10-10 05:19:57,387 - ct_pipeline - INFO - Successfully saved page 14 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/14.parquet
+2025-10-10 05:19:57,390 - ct_pipeline - INFO - Starting from page 15
+2025-10-10 05:19:57,991 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJRrZvOj2fg 
+ Last loaded page is page 15
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ9nYfms3vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ9nYfms3vg
+2025-10-10 05:19:58,023 - ct_pipeline - INFO - Successfully saved page 15 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/15.parquet
+2025-10-10 05:19:58,025 - ct_pipeline - INFO - Starting from page 16
+2025-10-10 05:19:58,630 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ9nYfms3vg 
+ Last loaded page is page 16
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qfp5mZfKj2Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qfp5mZfKj2Pg
+2025-10-10 05:19:58,659 - ct_pipeline - INFO - Successfully saved page 16 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/16.parquet
+2025-10-10 05:19:58,662 - ct_pipeline - INFO - Starting from page 17
+2025-10-10 05:19:59,298 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qfp5mZfKj2Pg 
+ Last loaded page is page 17
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZJrYfis1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZJrYfis1Pg
+2025-10-10 05:19:59,330 - ct_pipeline - INFO - Successfully saved page 17 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/17.parquet
+2025-10-10 05:19:59,333 - ct_pipeline - INFO - Starting from page 18
+2025-10-10 05:20:00,025 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZJrYfis1Pg 
+ Last loaded page is page 18
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJvbPmn3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJvbPmn3fg
+2025-10-10 05:20:00,087 - ct_pipeline - INFO - Successfully saved page 18 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/18.parquet
+2025-10-10 05:20:00,095 - ct_pipeline - INFO - Starting from page 19
+2025-10-10 05:20:00,848 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJvbPmn3fg 
+ Last loaded page is page 19
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5dobfGt2Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5dobfGt2Pg
+2025-10-10 05:20:00,880 - ct_pipeline - INFO - Successfully saved page 19 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/19.parquet
+2025-10-10 05:20:00,884 - ct_pipeline - INFO - Starting from page 20
+2025-10-10 05:20:01,344 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5dobfGt2Pg 
+ Last loaded page is page 20
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJNnbPKm1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJNnbPKm1Pg
+2025-10-10 05:20:01,381 - ct_pipeline - INFO - Successfully saved page 20 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/20.parquet
+2025-10-10 05:20:01,385 - ct_pipeline - INFO - Starting from page 21
+2025-10-10 05:20:01,844 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJNnbPKm1Pg 
+ Last loaded page is page 21
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJvbPGi1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJvbPGi1Pg
+2025-10-10 05:20:01,876 - ct_pipeline - INFO - Successfully saved page 21 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/21.parquet
+2025-10-10 05:20:01,879 - ct_pipeline - INFO - Starting from page 22
+2025-10-10 05:20:02,496 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJvbPGi1Pg 
+ Last loaded page is page 22
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep9pZPKm2fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep9pZPKm2fg
+2025-10-10 05:20:02,523 - ct_pipeline - INFO - Successfully saved page 22 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/22.parquet
+2025-10-10 05:20:02,525 - ct_pipeline - INFO - Starting from page 23
+2025-10-10 05:20:02,954 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep9pZPKm2fg 
+ Last loaded page is page 23
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QcJRvZfWl0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QcJRvZfWl0A
+2025-10-10 05:20:02,990 - ct_pipeline - INFO - Successfully saved page 23 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/23.parquet
+2025-10-10 05:20:02,994 - ct_pipeline - INFO - Starting from page 24
+2025-10-10 05:20:03,421 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QcJRvZfWl0A 
+ Last loaded page is page 24
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJNsYPei2Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJNsYPei2Pg
+2025-10-10 05:20:03,449 - ct_pipeline - INFO - Successfully saved page 24 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/24.parquet
+2025-10-10 05:20:03,452 - ct_pipeline - INFO - Starting from page 25
+2025-10-10 05:20:04,068 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJNsYPei2Pg 
+ Last loaded page is page 25
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJFnY_Cs2_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJFnY_Cs2_g
+2025-10-10 05:20:04,095 - ct_pipeline - INFO - Successfully saved page 25 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/25.parquet
+2025-10-10 05:20:04,098 - ct_pipeline - INFO - Starting from page 26
+2025-10-10 05:20:04,745 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJFnY_Cs2_g 
+ Last loaded page is page 26
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJnY_Sj3Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJnY_Sj3Pg
+2025-10-10 05:20:04,775 - ct_pipeline - INFO - Successfully saved page 26 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/26.parquet
+2025-10-10 05:20:04,778 - ct_pipeline - INFO - Starting from page 27
+2025-10-10 05:20:05,342 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJnY_Sj3Pg 
+ Last loaded page is page 27
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9rZfen2Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9rZfen2Pg
+2025-10-10 05:20:05,368 - ct_pipeline - INFO - Successfully saved page 27 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/27.parquet
+2025-10-10 05:20:05,370 - ct_pipeline - INFO - Starting from page 28
+2025-10-10 05:20:05,812 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9rZfen2Pg 
+ Last loaded page is page 28
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJdqbfSs2vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJdqbfSs2vg
+2025-10-10 05:20:05,847 - ct_pipeline - INFO - Successfully saved page 28 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/28.parquet
+2025-10-10 05:20:05,850 - ct_pipeline - INFO - Starting from page 29
+2025-10-10 05:20:06,496 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJdqbfSs2vg 
+ Last loaded page is page 29
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJvY_Oi0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJvY_Oi0A
+2025-10-10 05:20:06,528 - ct_pipeline - INFO - Successfully saved page 29 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/29.parquet
+2025-10-10 05:20:06,531 - ct_pipeline - INFO - Starting from page 30
+2025-10-10 05:20:07,200 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJvY_Oi0A 
+ Last loaded page is page 30
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZVoZf0
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZVoZf0
+2025-10-10 05:20:07,231 - ct_pipeline - INFO - Successfully saved page 30 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/30.parquet
+2025-10-10 05:20:07,233 - ct_pipeline - INFO - Starting from page 31
+2025-10-10 05:20:07,796 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZVoZf0 
+ Last loaded page is page 31
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJsZvah3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJsZvah3fg
+2025-10-10 05:20:07,821 - ct_pipeline - INFO - Successfully saved page 31 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/31.parquet
+2025-10-10 05:20:07,823 - ct_pipeline - INFO - Starting from page 32
+2025-10-10 05:20:08,270 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJsZvah3fg 
+ Last loaded page is page 32
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZobfSj2vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZobfSj2vg
+2025-10-10 05:20:08,297 - ct_pipeline - INFO - Successfully saved page 32 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/32.parquet
+2025-10-10 05:20:08,300 - ct_pipeline - INFO - Starting from page 33
+2025-10-10 05:20:08,772 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZobfSj2vg 
+ Last loaded page is page 33
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZBrZfWm3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZBrZfWm3fg
+2025-10-10 05:20:08,803 - ct_pipeline - INFO - Successfully saved page 33 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/33.parquet
+2025-10-10 05:20:08,805 - ct_pipeline - INFO - Starting from page 34
+2025-10-10 05:20:09,263 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZBrZfWm3fg 
+ Last loaded page is page 34
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9vYfWh2fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9vYfWh2fg
+2025-10-10 05:20:09,294 - ct_pipeline - INFO - Successfully saved page 34 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/34.parquet
+2025-10-10 05:20:09,297 - ct_pipeline - INFO - Starting from page 35
+2025-10-10 05:20:10,011 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9vYfWh2fg 
+ Last loaded page is page 35
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpBqbPSi2fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpBqbPSi2fg
+2025-10-10 05:20:10,068 - ct_pipeline - INFO - Successfully saved page 35 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/35.parquet
+2025-10-10 05:20:10,071 - ct_pipeline - INFO - Starting from page 36
+2025-10-10 05:20:10,634 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpBqbPSi2fg 
+ Last loaded page is page 36
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qf5dpYfat3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qf5dpYfat3fg
+2025-10-10 05:20:10,667 - ct_pipeline - INFO - Successfully saved page 36 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/36.parquet
+2025-10-10 05:20:10,673 - ct_pipeline - INFO - Starting from page 37
+2025-10-10 05:20:11,442 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qf5dpYfat3fg 
+ Last loaded page is page 37
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZoZvej2fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZoZvej2fg
+2025-10-10 05:20:11,475 - ct_pipeline - INFO - Successfully saved page 37 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/37.parquet
+2025-10-10 05:20:11,478 - ct_pipeline - INFO - Starting from page 38
+2025-10-10 05:20:11,912 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZoZvej2fg 
+ Last loaded page is page 38
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ9mZ_es3vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ9mZ_es3vg
+2025-10-10 05:20:11,941 - ct_pipeline - INFO - Successfully saved page 38 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/38.parquet
+2025-10-10 05:20:11,943 - ct_pipeline - INFO - Starting from page 39
+2025-10-10 05:20:12,402 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ9mZ_es3vg 
+ Last loaded page is page 39
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpRvY_Wm2Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpRvY_Wm2Pg
+2025-10-10 05:20:12,430 - ct_pipeline - INFO - Successfully saved page 39 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/39.parquet
+2025-10-10 05:20:12,432 - ct_pipeline - INFO - Starting from page 40
+2025-10-10 05:20:12,963 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpRvY_Wm2Pg 
+ Last loaded page is page 40
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZVtZfCj3_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZVtZfCj3_g
+2025-10-10 05:20:12,996 - ct_pipeline - INFO - Successfully saved page 40 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/40.parquet
+2025-10-10 05:20:12,999 - ct_pipeline - INFO - Starting from page 41
+2025-10-10 05:20:13,510 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZVtZfCj3_g 
+ Last loaded page is page 41
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep9rbfCk2Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep9rbfCk2Pg
+2025-10-10 05:20:13,540 - ct_pipeline - INFO - Successfully saved page 41 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/41.parquet
+2025-10-10 05:20:13,543 - ct_pipeline - INFO - Starting from page 42
+2025-10-10 05:20:14,095 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep9rbfCk2Pg 
+ Last loaded page is page 42
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJFtYfKm0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJFtYfKm0A
+2025-10-10 05:20:14,128 - ct_pipeline - INFO - Successfully saved page 42 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/42.parquet
+2025-10-10 05:20:14,131 - ct_pipeline - INFO - Starting from page 43
+2025-10-10 05:20:14,710 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJFtYfKm0A 
+ Last loaded page is page 43
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZ5sY_Sg1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZ5sY_Sg1Pg
+2025-10-10 05:20:14,740 - ct_pipeline - INFO - Successfully saved page 43 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/43.parquet
+2025-10-10 05:20:14,743 - ct_pipeline - INFO - Starting from page 44
+2025-10-10 05:20:15,320 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZ5sY_Sg1Pg 
+ Last loaded page is page 44
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZNtYvSi1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZNtYvSi1Pg
+2025-10-10 05:20:15,351 - ct_pipeline - INFO - Successfully saved page 44 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/44.parquet
+2025-10-10 05:20:15,354 - ct_pipeline - INFO - Starting from page 45
+2025-10-10 05:20:16,029 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZNtYvSi1Pg 
+ Last loaded page is page 45
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5FuZvGl1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5FuZvGl1Pg
+2025-10-10 05:20:16,065 - ct_pipeline - INFO - Successfully saved page 45 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/45.parquet
+2025-10-10 05:20:16,068 - ct_pipeline - INFO - Starting from page 46
+2025-10-10 05:20:16,670 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5FuZvGl1Pg 
+ Last loaded page is page 46
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ9vZ_Kj1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ9vZ_Kj1Pg
+2025-10-10 05:20:16,702 - ct_pipeline - INFO - Successfully saved page 46 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/46.parquet
+2025-10-10 05:20:16,705 - ct_pipeline - INFO - Starting from page 47
+2025-10-10 05:20:17,126 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ9vZ_Kj1Pg 
+ Last loaded page is page 47
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpFmbPGp
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpFmbPGp
+2025-10-10 05:20:17,157 - ct_pipeline - INFO - Successfully saved page 47 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/47.parquet
+2025-10-10 05:20:17,160 - ct_pipeline - INFO - Starting from page 48
+2025-10-10 05:20:17,786 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpFmbPGp 
+ Last loaded page is page 48
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qf5ZoZPOn3Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qf5ZoZPOn3Pg
+2025-10-10 05:20:17,815 - ct_pipeline - INFO - Successfully saved page 48 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/48.parquet
+2025-10-10 05:20:17,818 - ct_pipeline - INFO - Starting from page 49
+2025-10-10 05:20:18,387 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qf5ZoZPOn3Pg 
+ Last loaded page is page 49
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZdqbP0
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZdqbP0
+2025-10-10 05:20:18,414 - ct_pipeline - INFO - Successfully saved page 49 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/49.parquet
+2025-10-10 05:20:18,418 - ct_pipeline - INFO - Starting from page 50
+2025-10-10 05:20:19,034 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZdqbP0 
+ Last loaded page is page 50
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZRpbPKh2vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZRpbPKh2vg
+2025-10-10 05:20:19,073 - ct_pipeline - INFO - Successfully saved page 50 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/50.parquet
+2025-10-10 05:20:19,077 - ct_pipeline - INFO - Starting from page 51
+2025-10-10 05:20:49,746 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZRpbPKh2vg 
+ Last loaded page is page 51
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZdnbfah3vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZdnbfah3vg
+2025-10-10 05:20:49,779 - ct_pipeline - INFO - Successfully saved page 51 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/51.parquet
+2025-10-10 05:20:49,783 - ct_pipeline - INFO - Starting from page 52
+2025-10-10 05:20:50,357 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZdnbfah3vg 
+ Last loaded page is page 52
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZ5oYvWj1fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZ5oYvWj1fg
+2025-10-10 05:20:50,393 - ct_pipeline - INFO - Successfully saved page 52 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/52.parquet
+2025-10-10 05:20:50,397 - ct_pipeline - INFO - Starting from page 53
+2025-10-10 05:20:50,941 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZ5oYvWj1fg 
+ Last loaded page is page 53
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe59tZvOl2fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe59tZvOl2fg
+2025-10-10 05:20:50,970 - ct_pipeline - INFO - Successfully saved page 53 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/53.parquet
+2025-10-10 05:20:50,973 - ct_pipeline - INFO - Starting from page 54
+2025-10-10 05:20:51,585 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe59tZvOl2fg 
+ Last loaded page is page 54
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpNrbPKn3vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpNrbPKn3vg
+2025-10-10 05:20:51,618 - ct_pipeline - INFO - Successfully saved page 54 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/54.parquet
+2025-10-10 05:20:51,622 - ct_pipeline - INFO - Starting from page 55
+2025-10-10 05:20:52,483 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpNrbPKn3vg 
+ Last loaded page is page 55
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZVmYfeg3_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZVmYfeg3_g
+2025-10-10 05:20:52,523 - ct_pipeline - INFO - Successfully saved page 55 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/55.parquet
+2025-10-10 05:20:52,526 - ct_pipeline - INFO - Starting from page 56
+2025-10-10 05:20:53,100 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZVmYfeg3_g 
+ Last loaded page is page 56
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepVoYPCm1fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepVoYPCm1fg
+2025-10-10 05:20:53,131 - ct_pipeline - INFO - Successfully saved page 56 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/56.parquet
+2025-10-10 05:20:53,135 - ct_pipeline - INFO - Starting from page 57
+2025-10-10 05:20:53,812 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepVoYPCm1fg 
+ Last loaded page is page 57
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZRnZvSt3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZRnZvSt3fg
+2025-10-10 05:20:53,856 - ct_pipeline - INFO - Successfully saved page 57 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/57.parquet
+2025-10-10 05:20:53,860 - ct_pipeline - INFO - Starting from page 58
+2025-10-10 05:20:54,478 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZRnZvSt3fg 
+ Last loaded page is page 58
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ5pZPej2fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ5pZPej2fg
+2025-10-10 05:20:54,516 - ct_pipeline - INFO - Successfully saved page 58 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/58.parquet
+2025-10-10 05:20:54,520 - ct_pipeline - INFO - Starting from page 59
+2025-10-10 05:20:54,930 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ5pZPej2fg 
+ Last loaded page is page 59
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe59vZ_Om2vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe59vZ_Om2vg
+2025-10-10 05:20:54,963 - ct_pipeline - INFO - Successfully saved page 59 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/59.parquet
+2025-10-10 05:20:54,966 - ct_pipeline - INFO - Starting from page 60
+2025-10-10 05:20:55,471 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe59vZ_Om2vg 
+ Last loaded page is page 60
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJpYvGm2Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJpYvGm2Pg
+2025-10-10 05:20:55,509 - ct_pipeline - INFO - Successfully saved page 60 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/60.parquet
+2025-10-10 05:20:55,512 - ct_pipeline - INFO - Starting from page 61
+2025-10-10 05:20:55,988 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJJpYvGm2Pg 
+ Last loaded page is page 61
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep5vbfej3_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep5vbfej3_g
+2025-10-10 05:20:56,084 - ct_pipeline - INFO - Successfully saved page 61 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/61.parquet
+2025-10-10 05:20:56,161 - ct_pipeline - INFO - Starting from page 62
+2025-10-10 05:20:56,929 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep5vbfej3_g 
+ Last loaded page is page 62
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepBsY_mk2vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepBsY_mk2vg
+2025-10-10 05:20:56,966 - ct_pipeline - INFO - Successfully saved page 62 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/62.parquet
+2025-10-10 05:20:56,970 - ct_pipeline - INFO - Starting from page 63
+2025-10-10 05:20:57,538 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepBsY_mk2vg 
+ Last loaded page is page 63
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepdqYPim3_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepdqYPim3_g
+2025-10-10 05:20:57,573 - ct_pipeline - INFO - Successfully saved page 63 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/63.parquet
+2025-10-10 05:20:57,576 - ct_pipeline - INFO - Starting from page 64
+2025-10-10 05:20:58,154 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepdqYPim3_g 
+ Last loaded page is page 64
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepNrZvCm1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepNrZvCm1Pg
+2025-10-10 05:20:58,188 - ct_pipeline - INFO - Successfully saved page 64 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/64.parquet
+2025-10-10 05:20:58,191 - ct_pipeline - INFO - Starting from page 65
+2025-10-10 05:20:58,846 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepNrZvCm1Pg 
+ Last loaded page is page 65
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepNrZ_mi1Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepNrZ_mi1Pg
+2025-10-10 05:20:58,880 - ct_pipeline - INFO - Successfully saved page 65 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/65.parquet
+2025-10-10 05:20:58,884 - ct_pipeline - INFO - Starting from page 66
+2025-10-10 05:20:59,498 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepNrZ_mi1Pg 
+ Last loaded page is page 66
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZVnbPCg0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZVnbPCg0A
+2025-10-10 05:20:59,525 - ct_pipeline - INFO - Successfully saved page 66 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/66.parquet
+2025-10-10 05:20:59,527 - ct_pipeline - INFO - Starting from page 67
+2025-10-10 05:21:00,141 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZVnbPCg0A 
+ Last loaded page is page 67
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZdpZvaj0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZdpZvaj0A
+2025-10-10 05:21:00,170 - ct_pipeline - INFO - Successfully saved page 67 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/67.parquet
+2025-10-10 05:21:00,172 - ct_pipeline - INFO - Starting from page 68
+2025-10-10 05:21:00,862 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZdpZvaj0A 
+ Last loaded page is page 68
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZVuZveg3Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZVuZveg3Pg
+2025-10-10 05:21:00,901 - ct_pipeline - INFO - Successfully saved page 68 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/68.parquet
+2025-10-10 05:21:00,904 - ct_pipeline - INFO - Starting from page 69
+2025-10-10 05:21:01,435 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZVuZveg3Pg 
+ Last loaded page is page 69
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepRmZPil0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepRmZPil0A
+2025-10-10 05:21:01,462 - ct_pipeline - INFO - Successfully saved page 69 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/69.parquet
+2025-10-10 05:21:01,464 - ct_pipeline - INFO - Starting from page 70
+2025-10-10 05:21:02,043 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepRmZPil0A 
+ Last loaded page is page 70
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9pYvmn3Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9pYvmn3Pg
+2025-10-10 05:21:02,076 - ct_pipeline - INFO - Successfully saved page 70 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/70.parquet
+2025-10-10 05:21:02,079 - ct_pipeline - INFO - Starting from page 71
+2025-10-10 05:21:02,787 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9pYvmn3Pg 
+ Last loaded page is page 71
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5RpbfSs0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5RpbfSs0A
+2025-10-10 05:21:02,817 - ct_pipeline - INFO - Successfully saved page 71 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/71.parquet
+2025-10-10 05:21:02,821 - ct_pipeline - INFO - Starting from page 72
+2025-10-10 05:21:03,504 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5RpbfSs0A 
+ Last loaded page is page 72
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpFvYPih2vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpFvYPih2vg
+2025-10-10 05:21:03,531 - ct_pipeline - INFO - Successfully saved page 72 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/72.parquet
+2025-10-10 05:21:03,534 - ct_pipeline - INFO - Starting from page 73
+2025-10-10 05:21:04,082 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpFvYPih2vg 
+ Last loaded page is page 73
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepZvYPGh3vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepZvYPGh3vg
+2025-10-10 05:21:04,113 - ct_pipeline - INFO - Successfully saved page 73 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/73.parquet
+2025-10-10 05:21:04,116 - ct_pipeline - INFO - Starting from page 74
+2025-10-10 05:21:04,499 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepZvYPGh3vg 
+ Last loaded page is page 74
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepZmbfKj1fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepZmbfKj1fg
+2025-10-10 05:21:04,530 - ct_pipeline - INFO - Successfully saved page 74 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/74.parquet
+2025-10-10 05:21:04,532 - ct_pipeline - INFO - Starting from page 75
+2025-10-10 05:21:04,972 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepZmbfKj1fg 
+ Last loaded page is page 75
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5Jsbfis2Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5Jsbfis2Pg
+2025-10-10 05:21:05,005 - ct_pipeline - INFO - Successfully saved page 75 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/75.parquet
+2025-10-10 05:21:05,008 - ct_pipeline - INFO - Starting from page 76
+2025-10-10 05:21:05,620 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5Jsbfis2Pg 
+ Last loaded page is page 76
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepVvZfCn1fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepVvZfCn1fg
+2025-10-10 05:21:05,646 - ct_pipeline - INFO - Successfully saved page 76 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/76.parquet
+2025-10-10 05:21:05,649 - ct_pipeline - INFO - Starting from page 77
+2025-10-10 05:21:06,084 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepVvZfCn1fg 
+ Last loaded page is page 77
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QcZRuZfKi0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QcZRuZfKi0A
+2025-10-10 05:21:06,114 - ct_pipeline - INFO - Successfully saved page 77 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/77.parquet
+2025-10-10 05:21:06,117 - ct_pipeline - INFO - Starting from page 78
+2025-10-10 05:21:06,725 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QcZRuZfKi0A 
+ Last loaded page is page 78
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpVmbPim1fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpVmbPim1fg
+2025-10-10 05:21:06,754 - ct_pipeline - INFO - Successfully saved page 78 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/78.parquet
+2025-10-10 05:21:06,758 - ct_pipeline - INFO - Starting from page 79
+2025-10-10 05:21:07,380 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpVmbPim1fg 
+ Last loaded page is page 79
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJRoY_al3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJRoY_al3fg
+2025-10-10 05:21:07,408 - ct_pipeline - INFO - Successfully saved page 79 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/79.parquet
+2025-10-10 05:21:07,410 - ct_pipeline - INFO - Starting from page 80
+2025-10-10 05:21:07,991 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJRoY_al3fg 
+ Last loaded page is page 80
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZJtZ_Km3Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZJtZ_Km3Pg
+2025-10-10 05:21:08,019 - ct_pipeline - INFO - Successfully saved page 80 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/80.parquet
+2025-10-10 05:21:08,021 - ct_pipeline - INFO - Starting from page 81
+2025-10-10 05:21:08,469 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZJtZ_Km3Pg 
+ Last loaded page is page 81
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepRobPWl2_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepRobPWl2_g
+2025-10-10 05:21:08,499 - ct_pipeline - INFO - Successfully saved page 81 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/81.parquet
+2025-10-10 05:21:08,502 - ct_pipeline - INFO - Starting from page 82
+2025-10-10 05:21:09,178 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepRobPWl2_g 
+ Last loaded page is page 82
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepFmYvCi3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepFmYvCi3fg
+2025-10-10 05:21:09,207 - ct_pipeline - INFO - Successfully saved page 82 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/82.parquet
+2025-10-10 05:21:09,210 - ct_pipeline - INFO - Starting from page 83
+2025-10-10 05:21:09,635 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepFmYvCi3fg 
+ Last loaded page is page 83
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZBrbfes1fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZBrbfes1fg
+2025-10-10 05:21:09,670 - ct_pipeline - INFO - Successfully saved page 83 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/83.parquet
+2025-10-10 05:21:09,673 - ct_pipeline - INFO - Starting from page 84
+2025-10-10 05:21:10,110 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZBrbfes1fg 
+ Last loaded page is page 84
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZZmY_as3_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZZmY_as3_g
+2025-10-10 05:21:10,144 - ct_pipeline - INFO - Successfully saved page 84 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/84.parquet
+2025-10-10 05:21:10,147 - ct_pipeline - INFO - Starting from page 85
+2025-10-10 05:21:10,608 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZZmY_as3_g 
+ Last loaded page is page 85
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep5rZ_mh0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep5rZ_mh0A
+2025-10-10 05:21:10,642 - ct_pipeline - INFO - Successfully saved page 85 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/85.parquet
+2025-10-10 05:21:10,645 - ct_pipeline - INFO - Starting from page 86
+2025-10-10 05:21:11,253 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qep5rZ_mh0A 
+ Last loaded page is page 86
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZJnZfKh1fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZJnZfKh1fg
+2025-10-10 05:21:11,278 - ct_pipeline - INFO - Successfully saved page 86 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/86.parquet
+2025-10-10 05:21:11,280 - ct_pipeline - INFO - Starting from page 87
+2025-10-10 05:21:12,107 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZJnZfKh1fg 
+ Last loaded page is page 87
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZJoZPan2vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZJoZPan2vg
+2025-10-10 05:21:12,144 - ct_pipeline - INFO - Successfully saved page 87 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/87.parquet
+2025-10-10 05:21:12,148 - ct_pipeline - INFO - Starting from page 88
+2025-10-10 05:21:12,752 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZJoZPan2vg 
+ Last loaded page is page 88
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZrZfSk2fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZrZfSk2fg
+2025-10-10 05:21:12,781 - ct_pipeline - INFO - Successfully saved page 88 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/88.parquet
+2025-10-10 05:21:12,784 - ct_pipeline - INFO - Starting from page 89
+2025-10-10 05:21:13,448 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpZrZfSk2fg 
+ Last loaded page is page 89
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ5rZf0
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ5rZf0
+2025-10-10 05:21:13,482 - ct_pipeline - INFO - Successfully saved page 89 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/89.parquet
+2025-10-10 05:21:13,485 - ct_pipeline - INFO - Starting from page 90
+2025-10-10 05:21:14,026 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZ5rZf0 
+ Last loaded page is page 90
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZNtZves3fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZNtZves3fg
+2025-10-10 05:21:14,058 - ct_pipeline - INFO - Successfully saved page 90 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/90.parquet
+2025-10-10 05:21:14,061 - ct_pipeline - INFO - Starting from page 91
+2025-10-10 05:21:14,620 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZNtZves3fg 
+ Last loaded page is page 91
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepBmYvCk3Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepBmYvCk3Pg
+2025-10-10 05:21:14,655 - ct_pipeline - INFO - Successfully saved page 91 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/91.parquet
+2025-10-10 05:21:14,658 - ct_pipeline - INFO - Starting from page 92
+2025-10-10 05:21:15,076 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepBmYvCk3Pg 
+ Last loaded page is page 92
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ5uYvCn2Pg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ5uYvCn2Pg
+2025-10-10 05:21:15,104 - ct_pipeline - INFO - Successfully saved page 92 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/92.parquet
+2025-10-10 05:21:15,106 - ct_pipeline - INFO - Starting from page 93
+2025-10-10 05:21:15,785 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ5uYvCn2Pg 
+ Last loaded page is page 93
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZFuZvas0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZFuZvas0A
+2025-10-10 05:21:15,814 - ct_pipeline - INFO - Successfully saved page 93 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/93.parquet
+2025-10-10 05:21:15,817 - ct_pipeline - INFO - Starting from page 94
+2025-10-10 05:21:16,458 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QeZFuZvas0A 
+ Last loaded page is page 94
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZZubPal3_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZZubPal3_g
+2025-10-10 05:21:16,489 - ct_pipeline - INFO - Successfully saved page 94 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/94.parquet
+2025-10-10 05:21:16,492 - ct_pipeline - INFO - Starting from page 95
+2025-10-10 05:21:17,058 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfZZubPal3_g 
+ Last loaded page is page 95
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5dpZvCt2vg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5dpZvCt2vg
+2025-10-10 05:21:17,083 - ct_pipeline - INFO - Successfully saved page 95 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/95.parquet
+2025-10-10 05:21:17,086 - ct_pipeline - INFO - Starting from page 96
+2025-10-10 05:21:17,533 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6Qe5dpZvCt2vg 
+ Last loaded page is page 96
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QcZZrZ_Wk0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QcZZrZ_Wk0A
+2025-10-10 05:21:17,564 - ct_pipeline - INFO - Successfully saved page 96 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/96.parquet
+2025-10-10 05:21:17,569 - ct_pipeline - INFO - Starting from page 97
+2025-10-10 05:21:18,222 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QcZZrZ_Wk0A 
+ Last loaded page is page 97
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJvbfOn0A
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJvbfOn0A
+2025-10-10 05:21:18,252 - ct_pipeline - INFO - Successfully saved page 97 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/97.parquet
+2025-10-10 05:21:18,254 - ct_pipeline - INFO - Starting from page 98
+2025-10-10 05:21:18,673 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpJvbfOn0A 
+ Last loaded page is page 98
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpdrZ_Og3_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpdrZ_Og3_g
+2025-10-10 05:21:18,701 - ct_pipeline - INFO - Successfully saved page 98 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/98.parquet
+2025-10-10 05:21:18,705 - ct_pipeline - INFO - Starting from page 99
+2025-10-10 05:21:19,423 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfpdrZ_Og3_g 
+ Last loaded page is page 99
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QepBvZfCs2fg
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepBvZfCs2fg
+2025-10-10 05:21:19,454 - ct_pipeline - INFO - Successfully saved page 99 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/99.parquet
+2025-10-10 05:21:19,456 - ct_pipeline - INFO - Starting from page 100
+2025-10-10 05:21:20,039 - ct_pipeline - INFO - Successfully made request to https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QepBvZfCs2fg 
+ Last loaded page is page 100
+ Next page token is ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+ Next page is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:21:20,067 - ct_pipeline - INFO - Successfully saved page 100 at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/shards/2025-10-10/100.parquet
+2025-10-10 05:21:20,069 - ct_pipeline - INFO - Extracted 100 pages
+2025-10-10 05:21:23,577 - ct_pipeline - INFO - 100 pages compacted at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/compacted/2025-10-10/studies - 2025-10-10.parquet
+2025-10-10 05:21:23,586 - ct_pipeline - INFO - Transforming 100 pages
+2025-10-10 05:21:23,586 - ct_pipeline - INFO - Reading parquet file at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/compacted/2025-10-10
+2025-10-10 05:21:23,653 - ct_pipeline - ERROR - Transformation failed with error: unhashable type: 'list'
+2025-10-10 05:21:23,654 - ct_pipeline - INFO - Starting dbt run...
+2025-10-10 05:21:27,595 - ct_pipeline - ERROR - dbt run failed with error:
+
+2025-10-10 05:21:27,595 - ct_pipeline - ERROR - Sorry, pipeline failed: Command '['dbt', 'run', '--project-dir', 'C:\\Users\\labae\\desk\\ct_pipeline\\dbt_studies']' returned non-zero exit status 1.
+2025-10-10 05:23:06,278 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:23:06,278 - ct_pipeline - INFO - Transforming 100 pages
+2025-10-10 05:23:06,278 - ct_pipeline - INFO - Reading parquet file at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/compacted/2025-10-10
+2025-10-10 05:23:06,339 - ct_pipeline - ERROR - Transformation failed with error: unhashable type: 'list'
+2025-10-10 05:23:06,339 - ct_pipeline - ERROR - Sorry, pipeline failed: unhashable type: 'list'
+2025-10-10 05:28:51,883 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:28:51,883 - ct_pipeline - INFO - Transforming 100 pages
+2025-10-10 05:28:51,883 - ct_pipeline - INFO - Reading parquet file at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/compacted/2025-10-10
+2025-10-10 05:28:51,883 - ct_pipeline - INFO - DEBUG - columns parameter type: <class 'list'>
+2025-10-10 05:28:51,884 - ct_pipeline - INFO - DEBUG - columns parameter value: [['studies.protocolSection']]
+2025-10-10 05:28:51,884 - ct_pipeline - INFO - DEBUG - first element type: <class 'list'>
+2025-10-10 05:28:51,884 - ct_pipeline - INFO - DEBUG - first element value: ['studies.protocolSection']
+2025-10-10 05:28:51,949 - ct_pipeline - ERROR - Transformation failed with error: unhashable type: 'list'
+2025-10-10 05:28:51,949 - ct_pipeline - ERROR - Sorry, pipeline failed: unhashable type: 'list'
+2025-10-10 05:31:28,141 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:31:28,141 - ct_pipeline - INFO - Transforming 100 pages
+2025-10-10 05:31:28,141 - ct_pipeline - INFO - Reading parquet file at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/compacted/2025-10-10
+2025-10-10 05:31:28,141 - ct_pipeline - INFO - DEBUG - columns parameter type: <class 'list'>
+2025-10-10 05:31:28,141 - ct_pipeline - INFO - DEBUG - columns parameter value: ['studies.protocolSection']
+2025-10-10 05:31:28,141 - ct_pipeline - INFO - DEBUG - first element type: <class 'str'>
+2025-10-10 05:31:28,142 - ct_pipeline - INFO - DEBUG - first element value: studies.protocolSection
+2025-10-10 05:31:29,007 - ct_pipeline - INFO - Read 10000 rows, 1 columns
+2025-10-10 05:31:29,007 - ct_pipeline - INFO - Read 10000 rows
+2025-10-10 05:31:29,007 - ct_pipeline - INFO - Columns: ['protocolSection']
+2025-10-10 05:31:29,007 - ct_pipeline - INFO - First row keys: ['protocolSection']
+2025-10-10 05:31:29,007 - ct_pipeline - INFO - Flattening parquet data...
+2025-10-10 05:31:29,956 - ct_pipeline - INFO - Processed 1000/10000 studies (10.0%)
+2025-10-10 05:31:31,671 - ct_pipeline - INFO - Processed 2000/10000 studies (20.0%)
+2025-10-10 05:31:34,339 - ct_pipeline - INFO - Processed 3000/10000 studies (30.0%)
+2025-10-10 05:31:38,867 - ct_pipeline - INFO - Processed 4000/10000 studies (40.0%)
+2025-10-10 05:31:43,688 - ct_pipeline - INFO - Processed 5000/10000 studies (50.0%)
+2025-10-10 05:31:50,966 - ct_pipeline - INFO - Processed 6000/10000 studies (60.0%)
+2025-10-10 05:32:00,518 - ct_pipeline - INFO - Processed 7000/10000 studies (70.0%)
+2025-10-10 05:32:09,825 - ct_pipeline - INFO - Processed 8000/10000 studies (80.0%)
+2025-10-10 05:32:26,168 - ct_pipeline - INFO - Processed 9000/10000 studies (90.0%)
+2025-10-10 05:32:41,973 - ct_pipeline - INFO - Extracted 10000 studies
+2025-10-10 05:32:42,163 - ct_pipeline - INFO -   study_interventions: Removed 329 duplicates
+2025-10-10 05:32:42,188 - ct_pipeline - INFO -   study_sites: Removed 1273 duplicates
+2025-10-10 05:32:42,230 - ct_pipeline - INFO - 
+DataFrames created {'studies':              study_key  ...              etl_created_at
+0     4fc5d12dd31adf37  ...  2025-10-10T05:31:29.008466
+1     aed42fd1bd0964c8  ...  2025-10-10T05:31:29.008466
+2     6e0da60aee9adbe8  ...  2025-10-10T05:31:29.008466
+3     fca8ef70e17c5784  ...  2025-10-10T05:31:29.008466
+4     a8760d1065b3912e  ...  2025-10-10T05:31:29.008466
+...                ...  ...                         ...
+9995  092faae848958474  ...  2025-10-10T05:32:41.800904
+9996  28d091a28ba0b91c  ...  2025-10-10T05:32:41.806905
+9997  4237cf7a4cbb4144  ...  2025-10-10T05:32:41.835064
+9998  b789e03a60bd56d0  ...  2025-10-10T05:32:41.843229
+9999  63ee0c5e4cf71872  ...  2025-10-10T05:32:41.851312
+
+[10000 rows x 39 columns], 'sponsors':            sponsor_key  ...              etl_created_at
+0     82fda6622c8cc7d4  ...  2025-10-10T05:31:29.008466
+1     df1ef27f16823196  ...  2025-10-10T05:31:29.008466
+2     12e7b5caa9a8d668  ...  2025-10-10T05:31:29.008466
+3     c94452133ac2b618  ...  2025-10-10T05:31:29.008466
+4     266a473a9b9f78bf  ...  2025-10-10T05:31:29.008466
+...                ...  ...                         ...
+6715  3e79d22c29d1c3bc  ...  2025-10-10T05:32:41.654268
+6716  c860f3da60c1c8fb  ...  2025-10-10T05:32:41.655264
+6717  ab462ad52db30a5f  ...  2025-10-10T05:32:41.767064
+6718  355b327ff675c8c5  ...  2025-10-10T05:32:41.776069
+6719  150d4cfb704eebef  ...  2025-10-10T05:32:41.784910
+
+[6720 rows x 4 columns], 'conditions':          condition_key  ...              etl_created_at
+0     7463543d784aa59c  ...  2025-10-10T05:31:29.008466
+1     8741b4f7cc13fb2e  ...  2025-10-10T05:31:29.008466
+2     e765619294e2183b  ...  2025-10-10T05:31:29.008466
+3     18c8695b242995ae  ...  2025-10-10T05:31:29.008466
+4     e15279464173271b  ...  2025-10-10T05:31:29.008466
+...                ...  ...                         ...
+8767  78823c2799727f57  ...  2025-10-10T05:32:41.764069
+8768  45d3f6f54eefa5a4  ...  2025-10-10T05:32:41.786902
+8769  9459f9f6cb3387cd  ...  2025-10-10T05:32:41.790902
+8770  e058091716d6bec5  ...  2025-10-10T05:32:41.837063
+8771  bff1ffcffe3599e2  ...  2025-10-10T05:32:41.845226
+
+[8772 rows x 3 columns], 'interventions':        intervention_key  ...              etl_created_at
+0      df3134cd36cae74f  ...  2025-10-10T05:31:29.008466
+1      7cdc3c1b641d0abb  ...  2025-10-10T05:31:29.008466
+2      6365524f00e82265  ...  2025-10-10T05:31:29.008466
+3      c01e86b2fb038719  ...  2025-10-10T05:31:29.008466
+4      1ad0770a12f5c5f5  ...  2025-10-10T05:31:29.008466
+...                 ...  ...                         ...
+13482  3717eb62915368c5  ...  2025-10-10T05:32:41.808903
+13483  c58322fc77ec9a57  ...  2025-10-10T05:32:41.840154
+13484  ad52ae83abfbcafb  ...  2025-10-10T05:32:41.846228
+13485  2e3f923410eac6ba  ...  2025-10-10T05:32:41.848313
+13486  6c852c15c0b1648c  ...  2025-10-10T05:32:41.852312
+
+[13487 rows x 5 columns], 'sites':                site_key  ...              etl_created_at
+0      3a640fdf124c1b2b  ...  2025-10-10T05:31:29.008466
+1      f9ddaa3669d18807  ...  2025-10-10T05:31:29.008466
+2      9413e77b7513a453  ...  2025-10-10T05:31:29.008466
+3      b0acbab675b815ba  ...  2025-10-10T05:31:29.008466
+4      e8839596f3bcdf28  ...  2025-10-10T05:31:29.008466
+...                 ...  ...                         ...
+44162  bd490c99297de382  ...  2025-10-10T05:32:41.952924
+44163  82af9bbc479bd4fa  ...  2025-10-10T05:32:41.956997
+44164  973518026c6dfa82  ...  2025-10-10T05:32:41.959003
+44165  31c434908fa21717  ...  2025-10-10T05:32:41.967102
+44166  00c38e080cc86664  ...  2025-10-10T05:32:41.969100
+
+[44167 rows x 9 columns], 'study_sponsors':       study_sponsor_key  ...              etl_created_at
+0      93655cdd2ebdab6b  ...  2025-10-10T05:31:29.008466
+1      1a37a17f68354955  ...  2025-10-10T05:31:29.008466
+2      7bd2a3731da8dbd3  ...  2025-10-10T05:31:29.008466
+3      13148ff4f7e6c3ba  ...  2025-10-10T05:31:29.008466
+4      509b86931c12eb24  ...  2025-10-10T05:31:29.008466
+...                 ...  ...                         ...
+16095  b2f1dfb6f8739e82  ...  2025-10-10T05:32:41.800904
+16096  e30b81d0feef81e7  ...  2025-10-10T05:32:41.806905
+16097  fcbb9278898b8811  ...  2025-10-10T05:32:41.836064
+16098  6a4313c0de19fcc3  ...  2025-10-10T05:32:41.843229
+16099  ee54241a5cf2ca89  ...  2025-10-10T05:32:41.851312
+
+[16100 rows x 6 columns], 'study_conditions':       study_condition_key  ...              etl_created_at
+0        9a833a12afc44a8c  ...  2025-10-10T05:31:29.008466
+1        d0ad6a02403c8bdf  ...  2025-10-10T05:31:29.008466
+2        34bde0b9188514b6  ...  2025-10-10T05:31:29.008466
+3        e760500e7fa023fb  ...  2025-10-10T05:31:29.008466
+4        300c63ddb2187bc1  ...  2025-10-10T05:31:29.008466
+...                   ...  ...                         ...
+17613    339d8267e92dc19b  ...  2025-10-10T05:32:41.806905
+17614    6b2b56cdfb550175  ...  2025-10-10T05:32:41.837063
+17615    43a1f101880469cf  ...  2025-10-10T05:32:41.838151
+17616    147ed23c7b78018a  ...  2025-10-10T05:32:41.845226
+17617    9c98826036dc934d  ...  2025-10-10T05:32:41.851312
+
+[17618 rows x 4 columns], 'study_interventions':       study_intervention_key  ...              etl_created_at
+0           d2dc8c6ebe885243  ...  2025-10-10T05:31:29.008466
+1           1bc569e67c66dc6e  ...  2025-10-10T05:31:29.008466
+2           7855756433f22821  ...  2025-10-10T05:31:29.008466
+3           73b2d0a2ef55a9a1  ...  2025-10-10T05:31:29.008466
+4           b9472e1c70c34e6a  ...  2025-10-10T05:31:29.008466
+...                      ...  ...                         ...
+16942       fa96a150143faa19  ...  2025-10-10T05:32:41.840154
+16943       e6e1f6e026603795  ...  2025-10-10T05:32:41.846228
+16944       c3236ec12fdc3512  ...  2025-10-10T05:32:41.848313
+16945       20664fa049ae68f7  ...  2025-10-10T05:32:41.852312
+16946       e08825bb13adcf6a  ...  2025-10-10T05:32:41.852312
+
+[16618 rows x 4 columns], 'study_sites':          study_site_key  ...              etl_created_at
+0      04408dd2a1390d14  ...  2025-10-10T05:31:29.008466
+1      63268e33431a9731  ...  2025-10-10T05:31:29.008466
+2      d4d50fe6f4ce3fb9  ...  2025-10-10T05:31:29.008466
+3      8524efd1b1dbd49a  ...  2025-10-10T05:31:29.008466
+4      96faa013ee2e7785  ...  2025-10-10T05:31:29.008466
+...                 ...  ...                         ...
+61295  2a5f4626a8cf2c1e  ...  2025-10-10T05:32:41.969100
+61296  7c05ba21044bf3cd  ...  2025-10-10T05:32:41.971185
+61297  d32fde1b47ddaa3f  ...  2025-10-10T05:32:41.972185
+61298  b1b3bd34662654e5  ...  2025-10-10T05:32:41.973191
+61299  d239bb93f3ed280e  ...  2025-10-10T05:32:41.973191
+
+[60027 rows x 4 columns]}
+2025-10-10 05:32:42,279 - ct_pipeline - INFO - TRANSFORMATION COMPLETE YAY!
+2025-10-10 05:32:45,025 - ct_pipeline - ERROR - Load failed, rolling back: (psycopg2.OperationalError) could not translate host name "pipeline_db" to address: No such host is known. 
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-10 05:32:45,026 - ct_pipeline - ERROR - Transformation failed with error: (psycopg2.OperationalError) could not translate host name "pipeline_db" to address: No such host is known. 
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-10 05:32:45,026 - ct_pipeline - ERROR - Sorry, pipeline failed: (psycopg2.OperationalError) could not translate host name "pipeline_db" to address: No such host is known. 
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-10 05:35:17,491 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:35:17,491 - ct_pipeline - INFO - Starting dbt run...
+2025-10-10 05:35:21,408 - ct_pipeline - ERROR - dbt run failed with error:
+
+2025-10-10 05:35:21,410 - ct_pipeline - ERROR - Sorry, pipeline failed: Command '['dbt', 'run', '--project-dir', 'C:\\Users\\labae\\desk\\ct_pipeline\\dbt_studies']' returned non-zero exit status 1.
+2025-10-10 05:36:58,697 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:36:58,697 - ct_pipeline - INFO - Starting dbt run...
+2025-10-10 05:37:02,618 - ct_pipeline - ERROR - dbt run failed with error:
+
+2025-10-10 05:37:02,618 - ct_pipeline - ERROR - Sorry, pipeline failed: Command '['dbt', 'run', '--project-dir', 'C:\\Users\\labae\\desk\\ct_pipeline\\dbt_studies']' returned non-zero exit status 1.
+2025-10-10 05:37:46,490 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:37:46,490 - ct_pipeline - INFO - Starting dbt run...
+2025-10-10 05:37:50,220 - ct_pipeline - ERROR - dbt run failed with error:
+
+2025-10-10 05:37:50,220 - ct_pipeline - ERROR - Sorry, pipeline failed: Command '['dbt', 'run', '--project-dir', 'C:\\Users\\labae\\desk\\ct_pipeline\\dbt_studies']' returned non-zero exit status 1.
+2025-10-10 05:40:27,979 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:40:27,979 - ct_pipeline - INFO - Transforming 100 pages
+2025-10-10 05:40:27,979 - ct_pipeline - INFO - Reading parquet file at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/compacted/2025-10-10
+2025-10-10 05:40:27,979 - ct_pipeline - INFO - DEBUG - columns parameter type: <class 'list'>
+2025-10-10 05:40:27,979 - ct_pipeline - INFO - DEBUG - columns parameter value: ['studies.protocolSection']
+2025-10-10 05:40:27,980 - ct_pipeline - INFO - DEBUG - first element type: <class 'str'>
+2025-10-10 05:40:27,980 - ct_pipeline - INFO - DEBUG - first element value: studies.protocolSection
+2025-10-10 05:40:28,723 - ct_pipeline - INFO - Read 10000 rows, 1 columns
+2025-10-10 05:40:28,723 - ct_pipeline - INFO - Read 10000 rows
+2025-10-10 05:40:28,723 - ct_pipeline - INFO - Columns: ['protocolSection']
+2025-10-10 05:40:28,723 - ct_pipeline - INFO - First row keys: ['protocolSection']
+2025-10-10 05:40:28,723 - ct_pipeline - INFO - Flattening parquet data...
+2025-10-10 05:40:29,679 - ct_pipeline - INFO - Processed 1000/10000 studies (10.0%)
+2025-10-10 05:40:31,466 - ct_pipeline - INFO - Processed 2000/10000 studies (20.0%)
+2025-10-10 05:40:34,209 - ct_pipeline - INFO - Processed 3000/10000 studies (30.0%)
+2025-10-10 05:40:38,765 - ct_pipeline - INFO - Processed 4000/10000 studies (40.0%)
+2025-10-10 05:40:44,259 - ct_pipeline - INFO - Processed 5000/10000 studies (50.0%)
+2025-10-10 05:40:52,867 - ct_pipeline - INFO - Processed 6000/10000 studies (60.0%)
+2025-10-10 05:41:03,264 - ct_pipeline - INFO - Processed 7000/10000 studies (70.0%)
+2025-10-10 05:41:14,019 - ct_pipeline - INFO - Processed 8000/10000 studies (80.0%)
+2025-10-10 05:41:32,621 - ct_pipeline - INFO - Processed 9000/10000 studies (90.0%)
+2025-10-10 05:41:48,656 - ct_pipeline - INFO - Extracted 10000 studies
+2025-10-10 05:41:48,831 - ct_pipeline - INFO -   study_interventions: Removed 329 duplicates
+2025-10-10 05:41:48,855 - ct_pipeline - INFO -   study_sites: Removed 1273 duplicates
+2025-10-10 05:41:48,893 - ct_pipeline - INFO - 
+DataFrames created {'studies':              study_key  ...              etl_created_at
+0     4fc5d12dd31adf37  ...  2025-10-10T05:40:28.724257
+1     aed42fd1bd0964c8  ...  2025-10-10T05:40:28.724257
+2     6e0da60aee9adbe8  ...  2025-10-10T05:40:28.724257
+3     fca8ef70e17c5784  ...  2025-10-10T05:40:28.724257
+4     a8760d1065b3912e  ...  2025-10-10T05:40:28.724257
+...                ...  ...                         ...
+9995  092faae848958474  ...  2025-10-10T05:41:48.475516
+9996  28d091a28ba0b91c  ...  2025-10-10T05:41:48.481611
+9997  4237cf7a4cbb4144  ...  2025-10-10T05:41:48.512457
+9998  b789e03a60bd56d0  ...  2025-10-10T05:41:48.519829
+9999  63ee0c5e4cf71872  ...  2025-10-10T05:41:48.528081
+
+[10000 rows x 39 columns], 'sponsors':            sponsor_key  ...              etl_created_at
+0     82fda6622c8cc7d4  ...  2025-10-10T05:40:28.724257
+1     df1ef27f16823196  ...  2025-10-10T05:40:28.724257
+2     12e7b5caa9a8d668  ...  2025-10-10T05:40:28.724257
+3     c94452133ac2b618  ...  2025-10-10T05:40:28.724257
+4     266a473a9b9f78bf  ...  2025-10-10T05:40:28.724257
+...                ...  ...                         ...
+6715  3e79d22c29d1c3bc  ...  2025-10-10T05:41:48.331065
+6716  c860f3da60c1c8fb  ...  2025-10-10T05:41:48.331065
+6717  ab462ad52db30a5f  ...  2025-10-10T05:41:48.446144
+6718  355b327ff675c8c5  ...  2025-10-10T05:41:48.453143
+6719  150d4cfb704eebef  ...  2025-10-10T05:41:48.461243
+
+[6720 rows x 4 columns], 'conditions':          condition_key  ...              etl_created_at
+0     7463543d784aa59c  ...  2025-10-10T05:40:28.724257
+1     8741b4f7cc13fb2e  ...  2025-10-10T05:40:28.724257
+2     e765619294e2183b  ...  2025-10-10T05:40:28.724257
+3     18c8695b242995ae  ...  2025-10-10T05:40:28.724257
+4     e15279464173271b  ...  2025-10-10T05:40:28.724257
+...                ...  ...                         ...
+8767  78823c2799727f57  ...  2025-10-10T05:41:48.442071
+8768  45d3f6f54eefa5a4  ...  2025-10-10T05:41:48.462243
+8769  9459f9f6cb3387cd  ...  2025-10-10T05:41:48.466329
+8770  e058091716d6bec5  ...  2025-10-10T05:41:48.514454
+8771  bff1ffcffe3599e2  ...  2025-10-10T05:41:48.521942
+
+[8772 rows x 3 columns], 'interventions':        intervention_key  ...              etl_created_at
+0      df3134cd36cae74f  ...  2025-10-10T05:40:28.724257
+1      7cdc3c1b641d0abb  ...  2025-10-10T05:40:28.724257
+2      6365524f00e82265  ...  2025-10-10T05:40:28.724257
+3      c01e86b2fb038719  ...  2025-10-10T05:40:28.724257
+4      1ad0770a12f5c5f5  ...  2025-10-10T05:40:28.724257
+...                 ...  ...                         ...
+13482  3717eb62915368c5  ...  2025-10-10T05:41:48.484969
+13483  c58322fc77ec9a57  ...  2025-10-10T05:41:48.516833
+13484  ad52ae83abfbcafb  ...  2025-10-10T05:41:48.524007
+13485  2e3f923410eac6ba  ...  2025-10-10T05:41:48.526016
+13486  6c852c15c0b1648c  ...  2025-10-10T05:41:48.531080
+
+[13487 rows x 5 columns], 'sites':                site_key  ...              etl_created_at
+0      3a640fdf124c1b2b  ...  2025-10-10T05:40:28.724257
+1      f9ddaa3669d18807  ...  2025-10-10T05:40:28.724257
+2      9413e77b7513a453  ...  2025-10-10T05:40:28.724257
+3      b0acbab675b815ba  ...  2025-10-10T05:40:28.724257
+4      e8839596f3bcdf28  ...  2025-10-10T05:40:28.724257
+...                 ...  ...                         ...
+44162  bd490c99297de382  ...  2025-10-10T05:41:48.635680
+44163  82af9bbc479bd4fa  ...  2025-10-10T05:41:48.639771
+44164  973518026c6dfa82  ...  2025-10-10T05:41:48.642770
+44165  31c434908fa21717  ...  2025-10-10T05:41:48.650901
+44166  00c38e080cc86664  ...  2025-10-10T05:41:48.652902
+
+[44167 rows x 9 columns], 'study_sponsors':       study_sponsor_key  ...              etl_created_at
+0      93655cdd2ebdab6b  ...  2025-10-10T05:40:28.724257
+1      1a37a17f68354955  ...  2025-10-10T05:40:28.724257
+2      7bd2a3731da8dbd3  ...  2025-10-10T05:40:28.724257
+3      13148ff4f7e6c3ba  ...  2025-10-10T05:40:28.724257
+4      509b86931c12eb24  ...  2025-10-10T05:40:28.724257
+...                 ...  ...                         ...
+16095  b2f1dfb6f8739e82  ...  2025-10-10T05:41:48.475516
+16096  e30b81d0feef81e7  ...  2025-10-10T05:41:48.482613
+16097  fcbb9278898b8811  ...  2025-10-10T05:41:48.512457
+16098  6a4313c0de19fcc3  ...  2025-10-10T05:41:48.520830
+16099  ee54241a5cf2ca89  ...  2025-10-10T05:41:48.528081
+
+[16100 rows x 6 columns], 'study_conditions':       study_condition_key  ...              etl_created_at
+0        9a833a12afc44a8c  ...  2025-10-10T05:40:28.724257
+1        d0ad6a02403c8bdf  ...  2025-10-10T05:40:28.724257
+2        34bde0b9188514b6  ...  2025-10-10T05:40:28.724257
+3        e760500e7fa023fb  ...  2025-10-10T05:40:28.724257
+4        300c63ddb2187bc1  ...  2025-10-10T05:40:28.724257
+...                   ...  ...                         ...
+17613    339d8267e92dc19b  ...  2025-10-10T05:41:48.482613
+17614    6b2b56cdfb550175  ...  2025-10-10T05:41:48.514454
+17615    43a1f101880469cf  ...  2025-10-10T05:41:48.514454
+17616    147ed23c7b78018a  ...  2025-10-10T05:41:48.521942
+17617    9c98826036dc934d  ...  2025-10-10T05:41:48.528081
+
+[17618 rows x 4 columns], 'study_interventions':       study_intervention_key  ...              etl_created_at
+0           d2dc8c6ebe885243  ...  2025-10-10T05:40:28.724257
+1           1bc569e67c66dc6e  ...  2025-10-10T05:40:28.724257
+2           7855756433f22821  ...  2025-10-10T05:40:28.724257
+3           73b2d0a2ef55a9a1  ...  2025-10-10T05:40:28.724257
+4           b9472e1c70c34e6a  ...  2025-10-10T05:40:28.724257
+...                      ...  ...                         ...
+16942       fa96a150143faa19  ...  2025-10-10T05:41:48.517832
+16943       e6e1f6e026603795  ...  2025-10-10T05:41:48.524007
+16944       c3236ec12fdc3512  ...  2025-10-10T05:41:48.526016
+16945       20664fa049ae68f7  ...  2025-10-10T05:41:48.531080
+16946       e08825bb13adcf6a  ...  2025-10-10T05:41:48.531080
+
+[16618 rows x 4 columns], 'study_sites':          study_site_key  ...              etl_created_at
+0      04408dd2a1390d14  ...  2025-10-10T05:40:28.724257
+1      63268e33431a9731  ...  2025-10-10T05:40:28.724257
+2      d4d50fe6f4ce3fb9  ...  2025-10-10T05:40:28.724257
+3      8524efd1b1dbd49a  ...  2025-10-10T05:40:28.724257
+4      96faa013ee2e7785  ...  2025-10-10T05:40:28.724257
+...                 ...  ...                         ...
+61295  2a5f4626a8cf2c1e  ...  2025-10-10T05:41:48.652902
+61296  7c05ba21044bf3cd  ...  2025-10-10T05:41:48.654981
+61297  d32fde1b47ddaa3f  ...  2025-10-10T05:41:48.654981
+61298  b1b3bd34662654e5  ...  2025-10-10T05:41:48.656978
+61299  d239bb93f3ed280e  ...  2025-10-10T05:41:48.656978
+
+[60027 rows x 4 columns]}
+2025-10-10 05:41:48,946 - ct_pipeline - INFO - TRANSFORMATION COMPLETE YAY!
+2025-10-10 05:41:51,675 - ct_pipeline - ERROR - Load failed, rolling back: (psycopg2.OperationalError) could not translate host name "pipeline_db" to address: No such host is known. 
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-10 05:41:51,676 - ct_pipeline - ERROR - Transformation failed with error: (psycopg2.OperationalError) could not translate host name "pipeline_db" to address: No such host is known. 
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-10 05:41:51,676 - ct_pipeline - ERROR - Sorry, pipeline failed: (psycopg2.OperationalError) could not translate host name "pipeline_db" to address: No such host is known. 
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-10 05:42:29,212 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:42:29,212 - ct_pipeline - INFO - Transforming 100 pages
+2025-10-10 05:42:29,213 - ct_pipeline - INFO - Reading parquet file at C:/Users/labae/desk/ct_pipeline/etl/data/raw/parquet_files/compacted/2025-10-10
+2025-10-10 05:42:29,213 - ct_pipeline - INFO - DEBUG - columns parameter type: <class 'list'>
+2025-10-10 05:42:29,213 - ct_pipeline - INFO - DEBUG - columns parameter value: ['studies.protocolSection']
+2025-10-10 05:42:29,213 - ct_pipeline - INFO - DEBUG - first element type: <class 'str'>
+2025-10-10 05:42:29,213 - ct_pipeline - INFO - DEBUG - first element value: studies.protocolSection
+2025-10-10 05:42:29,956 - ct_pipeline - INFO - Read 10000 rows, 1 columns
+2025-10-10 05:42:29,956 - ct_pipeline - INFO - Read 10000 rows
+2025-10-10 05:42:29,957 - ct_pipeline - INFO - Columns: ['protocolSection']
+2025-10-10 05:42:29,957 - ct_pipeline - INFO - First row keys: ['protocolSection']
+2025-10-10 05:42:29,957 - ct_pipeline - INFO - Flattening parquet data...
+2025-10-10 05:42:30,851 - ct_pipeline - INFO - Processed 1000/10000 studies (10.0%)
+2025-10-10 05:42:32,492 - ct_pipeline - INFO - Processed 2000/10000 studies (20.0%)
+2025-10-10 05:42:35,094 - ct_pipeline - INFO - Processed 3000/10000 studies (30.0%)
+2025-10-10 05:42:39,510 - ct_pipeline - INFO - Processed 4000/10000 studies (40.0%)
+2025-10-10 05:42:44,498 - ct_pipeline - INFO - Processed 5000/10000 studies (50.0%)
+2025-10-10 05:42:52,033 - ct_pipeline - INFO - Processed 6000/10000 studies (60.0%)
+2025-10-10 05:43:01,972 - ct_pipeline - INFO - Processed 7000/10000 studies (70.0%)
+2025-10-10 05:43:11,569 - ct_pipeline - INFO - Processed 8000/10000 studies (80.0%)
+2025-10-10 05:43:28,277 - ct_pipeline - INFO - Processed 9000/10000 studies (90.0%)
+2025-10-10 05:43:44,200 - ct_pipeline - INFO - Extracted 10000 studies
+2025-10-10 05:43:44,369 - ct_pipeline - INFO -   study_interventions: Removed 329 duplicates
+2025-10-10 05:43:44,392 - ct_pipeline - INFO -   study_sites: Removed 1273 duplicates
+2025-10-10 05:43:44,437 - ct_pipeline - INFO - 
+DataFrames created {'studies':              study_key  ...              etl_created_at
+0     4fc5d12dd31adf37  ...  2025-10-10T05:42:29.957787
+1     aed42fd1bd0964c8  ...  2025-10-10T05:42:29.957787
+2     6e0da60aee9adbe8  ...  2025-10-10T05:42:29.957787
+3     fca8ef70e17c5784  ...  2025-10-10T05:42:29.957787
+4     a8760d1065b3912e  ...  2025-10-10T05:42:29.958788
+...                ...  ...                         ...
+9995  092faae848958474  ...  2025-10-10T05:43:44.019824
+9996  28d091a28ba0b91c  ...  2025-10-10T05:43:44.026824
+9997  4237cf7a4cbb4144  ...  2025-10-10T05:43:44.056069
+9998  b789e03a60bd56d0  ...  2025-10-10T05:43:44.065435
+9999  63ee0c5e4cf71872  ...  2025-10-10T05:43:44.073438
+
+[10000 rows x 39 columns], 'sponsors':            sponsor_key  ...              etl_created_at
+0     82fda6622c8cc7d4  ...  2025-10-10T05:42:29.957787
+1     df1ef27f16823196  ...  2025-10-10T05:42:29.957787
+2     12e7b5caa9a8d668  ...  2025-10-10T05:42:29.957787
+3     c94452133ac2b618  ...  2025-10-10T05:42:29.957787
+4     266a473a9b9f78bf  ...  2025-10-10T05:42:29.957787
+...                ...  ...                         ...
+6715  3e79d22c29d1c3bc  ...  2025-10-10T05:43:43.875254
+6716  c860f3da60c1c8fb  ...  2025-10-10T05:43:43.876337
+6717  ab462ad52db30a5f  ...  2025-10-10T05:43:43.989824
+6718  355b327ff675c8c5  ...  2025-10-10T05:43:43.996821
+6719  150d4cfb704eebef  ...  2025-10-10T05:43:44.003824
+
+[6720 rows x 4 columns], 'conditions':          condition_key  ...              etl_created_at
+0     7463543d784aa59c  ...  2025-10-10T05:42:29.957787
+1     8741b4f7cc13fb2e  ...  2025-10-10T05:42:29.957787
+2     e765619294e2183b  ...  2025-10-10T05:42:29.957787
+3     18c8695b242995ae  ...  2025-10-10T05:42:29.957787
+4     e15279464173271b  ...  2025-10-10T05:42:29.957787
+...                ...  ...                         ...
+8767  78823c2799727f57  ...  2025-10-10T05:43:43.985719
+8768  45d3f6f54eefa5a4  ...  2025-10-10T05:43:44.005822
+8769  9459f9f6cb3387cd  ...  2025-10-10T05:43:44.010824
+8770  e058091716d6bec5  ...  2025-10-10T05:43:44.059370
+8771  bff1ffcffe3599e2  ...  2025-10-10T05:43:44.066437
+
+[8772 rows x 3 columns], 'interventions':        intervention_key  ...              etl_created_at
+0      df3134cd36cae74f  ...  2025-10-10T05:42:29.957787
+1      7cdc3c1b641d0abb  ...  2025-10-10T05:42:29.957787
+2      6365524f00e82265  ...  2025-10-10T05:42:29.957787
+3      c01e86b2fb038719  ...  2025-10-10T05:42:29.957787
+4      1ad0770a12f5c5f5  ...  2025-10-10T05:42:29.957787
+...                 ...  ...                         ...
+13482  3717eb62915368c5  ...  2025-10-10T05:43:44.028823
+13483  c58322fc77ec9a57  ...  2025-10-10T05:43:44.061366
+13484  ad52ae83abfbcafb  ...  2025-10-10T05:43:44.069436
+13485  2e3f923410eac6ba  ...  2025-10-10T05:43:44.070435
+13486  6c852c15c0b1648c  ...  2025-10-10T05:43:44.075434
+
+[13487 rows x 5 columns], 'sites':                site_key  ...              etl_created_at
+0      3a640fdf124c1b2b  ...  2025-10-10T05:42:29.957787
+1      f9ddaa3669d18807  ...  2025-10-10T05:42:29.957787
+2      9413e77b7513a453  ...  2025-10-10T05:42:29.957787
+3      b0acbab675b815ba  ...  2025-10-10T05:42:29.957787
+4      e8839596f3bcdf28  ...  2025-10-10T05:42:29.957787
+...                 ...  ...                         ...
+44162  bd490c99297de382  ...  2025-10-10T05:43:44.177495
+44163  82af9bbc479bd4fa  ...  2025-10-10T05:43:44.182498
+44164  973518026c6dfa82  ...  2025-10-10T05:43:44.184497
+44165  31c434908fa21717  ...  2025-10-10T05:43:44.192496
+44166  00c38e080cc86664  ...  2025-10-10T05:43:44.194499
+
+[44167 rows x 9 columns], 'study_sponsors':       study_sponsor_key  ...              etl_created_at
+0      93655cdd2ebdab6b  ...  2025-10-10T05:42:29.957787
+1      1a37a17f68354955  ...  2025-10-10T05:42:29.957787
+2      7bd2a3731da8dbd3  ...  2025-10-10T05:42:29.957787
+3      13148ff4f7e6c3ba  ...  2025-10-10T05:42:29.957787
+4      509b86931c12eb24  ...  2025-10-10T05:42:29.957787
+...                 ...  ...                         ...
+16095  b2f1dfb6f8739e82  ...  2025-10-10T05:43:44.019824
+16096  e30b81d0feef81e7  ...  2025-10-10T05:43:44.026824
+16097  fcbb9278898b8811  ...  2025-10-10T05:43:44.057074
+16098  6a4313c0de19fcc3  ...  2025-10-10T05:43:44.065435
+16099  ee54241a5cf2ca89  ...  2025-10-10T05:43:44.073438
+
+[16100 rows x 6 columns], 'study_conditions':       study_condition_key  ...              etl_created_at
+0        9a833a12afc44a8c  ...  2025-10-10T05:42:29.957787
+1        d0ad6a02403c8bdf  ...  2025-10-10T05:42:29.957787
+2        34bde0b9188514b6  ...  2025-10-10T05:42:29.957787
+3        e760500e7fa023fb  ...  2025-10-10T05:42:29.957787
+4        300c63ddb2187bc1  ...  2025-10-10T05:42:29.957787
+...                   ...  ...                         ...
+17613    339d8267e92dc19b  ...  2025-10-10T05:43:44.026824
+17614    6b2b56cdfb550175  ...  2025-10-10T05:43:44.059370
+17615    43a1f101880469cf  ...  2025-10-10T05:43:44.059370
+17616    147ed23c7b78018a  ...  2025-10-10T05:43:44.066437
+17617    9c98826036dc934d  ...  2025-10-10T05:43:44.073438
+
+[17618 rows x 4 columns], 'study_interventions':       study_intervention_key  ...              etl_created_at
+0           d2dc8c6ebe885243  ...  2025-10-10T05:42:29.957787
+1           1bc569e67c66dc6e  ...  2025-10-10T05:42:29.957787
+2           7855756433f22821  ...  2025-10-10T05:42:29.957787
+3           73b2d0a2ef55a9a1  ...  2025-10-10T05:42:29.957787
+4           b9472e1c70c34e6a  ...  2025-10-10T05:42:29.957787
+...                      ...  ...                         ...
+16942       fa96a150143faa19  ...  2025-10-10T05:43:44.062366
+16943       e6e1f6e026603795  ...  2025-10-10T05:43:44.069436
+16944       c3236ec12fdc3512  ...  2025-10-10T05:43:44.070435
+16945       20664fa049ae68f7  ...  2025-10-10T05:43:44.075434
+16946       e08825bb13adcf6a  ...  2025-10-10T05:43:44.075434
+
+[16618 rows x 4 columns], 'study_sites':          study_site_key  ...              etl_created_at
+0      04408dd2a1390d14  ...  2025-10-10T05:42:29.957787
+1      63268e33431a9731  ...  2025-10-10T05:42:29.957787
+2      d4d50fe6f4ce3fb9  ...  2025-10-10T05:42:29.957787
+3      8524efd1b1dbd49a  ...  2025-10-10T05:42:29.957787
+4      96faa013ee2e7785  ...  2025-10-10T05:42:29.957787
+...                 ...  ...                         ...
+61295  2a5f4626a8cf2c1e  ...  2025-10-10T05:43:44.194499
+61296  7c05ba21044bf3cd  ...  2025-10-10T05:43:44.197579
+61297  d32fde1b47ddaa3f  ...  2025-10-10T05:43:44.198592
+61298  b1b3bd34662654e5  ...  2025-10-10T05:43:44.200590
+61299  d239bb93f3ed280e  ...  2025-10-10T05:43:44.200590
+
+[60027 rows x 4 columns]}
+2025-10-10 05:43:44,476 - ct_pipeline - INFO - TRANSFORMATION COMPLETE YAY!
+2025-10-10 05:43:44,544 - ct_pipeline - INFO - Loading studies: 10000 rows
+2025-10-10 05:43:48,995 - ct_pipeline - INFO -  studies loaded: 10000 rows
+2025-10-10 05:43:48,995 - ct_pipeline - INFO - Loading sponsors: 6720 rows
+2025-10-10 05:43:49,251 - ct_pipeline - INFO -  sponsors loaded: 6720 rows
+2025-10-10 05:43:49,251 - ct_pipeline - INFO - Loading conditions: 8772 rows
+2025-10-10 05:43:49,500 - ct_pipeline - INFO -  conditions loaded: 8772 rows
+2025-10-10 05:43:49,501 - ct_pipeline - INFO - Loading interventions: 13487 rows
+2025-10-10 05:43:50,093 - ct_pipeline - INFO -  interventions loaded: 13487 rows
+2025-10-10 05:43:50,093 - ct_pipeline - INFO - Loading sites: 44167 rows
+2025-10-10 05:43:53,631 - ct_pipeline - INFO -  sites loaded: 44167 rows
+2025-10-10 05:43:53,631 - ct_pipeline - INFO - Loading study_sponsors: 16100 rows
+2025-10-10 05:43:54,489 - ct_pipeline - INFO -  study_sponsors loaded: 16100 rows
+2025-10-10 05:43:54,489 - ct_pipeline - INFO - Loading study_conditions: 17618 rows
+2025-10-10 05:43:55,132 - ct_pipeline - INFO -  study_conditions loaded: 17618 rows
+2025-10-10 05:43:55,133 - ct_pipeline - INFO - Loading study_interventions: 16618 rows
+2025-10-10 05:43:55,728 - ct_pipeline - INFO -  study_interventions loaded: 16618 rows
+2025-10-10 05:43:55,729 - ct_pipeline - INFO - Loading study_sites: 60027 rows
+2025-10-10 05:43:57,761 - ct_pipeline - INFO -  study_sites loaded: 60027 rows
+2025-10-10 05:43:57,783 - ct_pipeline - INFO - All tables loaded successfully!
+2025-10-10 05:43:57,784 - ct_pipeline - INFO - LOADING COMPLETE YAY!
+2025-10-10 05:43:57,798 - ct_pipeline - INFO - PIPELINE SUCCESSFUL!
+2025-10-10 05:45:08,601 - ct_pipeline - INFO - Initializing Extractor 
+ 
+
+ Last saved page is page 0
+ URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100
+ Next URL is https://clinicaltrials.gov/api/v2/studies?pageSize=100&pageToken=ZVNj7o2Elu8o3lpiVoGzqen-mo6QfJ9mYvGg2_g
+2025-10-10 05:45:08,601 - ct_pipeline - INFO - Starting dbt run...
+2025-10-10 05:45:12,791 - ct_pipeline - INFO - dbt run output:
+[0m04:45:10  Running with dbt=1.10.13
+[0m04:45:10  Registered adapter: postgres=1.9.1
+[0m04:45:10  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_studies.example
+[0m04:45:10  Found 10 models, 71 data tests, 9 sources, 561 macros
+[0m04:45:10  
+[0m04:45:10  Concurrency: 4 threads (target='dev')
+[0m04:45:10  
+[0m04:45:11  1 of 10 START sql table model analytics.dim_conditions ......................... [RUN]
+[0m04:45:11  2 of 10 START sql table model analytics.dim_interventions ...................... [RUN]
+[0m04:45:11  3 of 10 START sql table model analytics.dim_sites .............................. [RUN]
+[0m04:45:11  4 of 10 START sql table model analytics.dim_sponsors ........................... [RUN]
+[0m04:45:11  1 of 10 OK created sql table model analytics.dim_conditions .................... [[32mSELECT 8772[0m in 0.13s]
+[0m04:45:11  5 of 10 START sql table model analytics.dim_studies ............................ [RUN]
+[0m04:45:11  4 of 10 OK created sql table model analytics.dim_sponsors ...................... [[32mSELECT 6720[0m in 0.14s]
+[0m04:45:11  6 of 10 START sql incremental model analytics.fact_study_condition ............. [RUN]
+[0m04:45:11  2 of 10 OK created sql table model analytics.dim_interventions ................. [[32mSELECT 13487[0m in 0.16s]
+[0m04:45:11  7 of 10 START sql incremental model analytics.fact_study_intervention .......... [RUN]
+[0m04:45:11  3 of 10 OK created sql table model analytics.dim_sites ......................... [[32mSELECT 44167[0m in 0.19s]
+[0m04:45:11  8 of 10 START sql incremental model analytics.fact_study_site .................. [RUN]
+[0m04:45:11  6 of 10 OK created sql incremental model analytics.fact_study_condition ........ [[32mSELECT 17618[0m in 0.11s]
+[0m04:45:11  9 of 10 START sql incremental model analytics.fact_study_sponsor ............... [RUN]
+[0m04:45:11  7 of 10 OK created sql incremental model analytics.fact_study_intervention ..... [[32mSELECT 16618[0m in 0.11s]
+[0m04:45:11  9 of 10 OK created sql incremental model analytics.fact_study_sponsor .......... [[32mSELECT 16100[0m in 0.10s]
+[0m04:45:11  8 of 10 OK created sql incremental model analytics.fact_study_site ............. [[32mSELECT 60027[0m in 0.17s]
+[0m04:45:11  5 of 10 OK created sql table model analytics.dim_studies ....................... [[32mSELECT 10000[0m in 0.46s]
+[0m04:45:11  10 of 10 START sql incremental model analytics.fact_study_snapshot ............. [RUN]
+[0m04:45:11  10 of 10 OK created sql incremental model analytics.fact_study_snapshot ........ [[32mSELECT 10000[0m in 0.12s]
+[0m04:45:11  
+[0m04:45:11  Finished running 5 incremental models, 5 table models in 0 hours 0 minutes and 0.92 seconds (0.92s).
+[0m04:45:11  
+[0m04:45:11  [32mCompleted successfully[0m
+[0m04:45:11  
+[0m04:45:11  Done. PASS=10 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=10
+[0m
+2025-10-10 05:45:12,791 - ct_pipeline - INFO - dbt run COMPLETE YAY!
+2025-10-10 05:45:12,791 - ct_pipeline - INFO - PIPELINE SUCCESSFUL!

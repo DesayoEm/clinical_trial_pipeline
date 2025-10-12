@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  pipeline_db:
+    image: postgres:15-alpine
+    container_name: ct-pipeline-postgres-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    ports:
+      - "5433:5432"
+    networks:
+      - pipeline-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  etl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ct-etl-pipeline
+    depends_on:
+      pipeline_db:
+        condition: service_healthy
+    environment:
+      DB_HOST: pipeline_db
+      DB_PORT: 5432
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DATABASE_URL: ${DATABASE_URL}
+      SHARD_STORAGE_DIR: /app/data/shards
+      COMPACTED_STORAGE_DIR: /app/data/compacted
+      STATE_MGT_DIR: /app/states
+      DBT_DIR: /app/dbt_studies
+      PYTHONUNBUFFERED: 1
+    volumes:
+      - ./etl:/app/etl
+      - ./dbt_studies:/app/dbt_studies
+      - pipeline_data:/app/data
+      - pipeline_states:/app/states
+    networks:
+      - pipeline-network
+    command: >
+      sh -c "
+        echo '0 0 * * * cd /app && python -m etl.main >> /var/log/cron.log 2>&1' > /etc/crontabs/root &&
+        crond -f -l 2
+      "
+
+  dbt:
+    build:
+      context: .
+      dockerfile: Dockerfile.dbt
+    container_name: clinical_trials_dbt
+    depends_on:
+      etl:
+        condition: service_started
+      pipeline_db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+    volumes:
+       - ./dbt_studies:/app/dbt_studies
+    command: >
+      sh -c "
+        echo '0 1 * * * cd /app/dbt_studies && dbt run >> /var/log/dbt-cron.log 2>&1' > /etc/crontabs/root &&
+        crond -f -l 2
+      "
+
+networks:
+  pipeline-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
+  pipeline_data:
+    driver: local
+  pipeline_states:
+    driver: local
