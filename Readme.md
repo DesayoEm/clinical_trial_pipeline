@@ -23,11 +23,9 @@ The pipeline ingests clinical trial data from ClinicalTrials.gov API, stages it 
 
 
 ### 1. Clone the Repository
-```bash
-
-```bash
+```
 git clone https://github.com/DesayoEm/clinical_trial_pipeline
-cd ct_pipeline
+cd clinical_trial_pipeline
 ```
 
 
@@ -59,16 +57,15 @@ COMPOSE_FILE=docker-compose.yml
 ##  Running the Pipeline
 
 ###  One-time Manual Run
-```bash
+```
 # Build and run all services once
 docker-compose up --build
 
 # Stop when done
 docker-compose down
-
 ```
 ###   Enable Daily Automated Runs
-```bash
+```
 # Start services with cron enabled (etl daily at 12 AM, dbt at 1 AM)
 docker-compose up -d
 
@@ -80,12 +77,9 @@ docker-compose down
 ```
 
 ### Cleaning Up
-
-```bash
+```
 docker-compose down
-
 docker-compose down -v
-
 ```
 
 
