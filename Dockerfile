@@ -18,12 +18,12 @@ COPY config.py /app/config.py
 
 ENV PYTHONPATH=/app
 
-RUN mkdir -p /app/data/shards /app/data/compacted /app/states /var/log && \
-    chmod -R 777 /app/data /app/states /var/log \
+RUN mkdir -p /app/data/shards /app/data/compacted /app/etl/states /var/log && \
+    chmod -R 777 /app/data /app/etl/states /var/log \
 
 
 CMD ["bash", "-c", "mkdir -p state && \
-echo 'result = \"\"' > state/last_extraction_result.py && \
-echo 'shard_path = \"\"' > state/last_shard_path.py && \
-echo 'last_saved_token = \"\"' > state/last_token.py && \
+echo 'result = \"\"' > etl/states/last_extraction_result.py && \
+echo 'shard_path = \"\"' > etl/states/last_shard_path.py && \
+echo 'last_saved_token = \"\"' > etl/states/last_token.py && \
 python -m etl.main"]
