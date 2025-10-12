@@ -22,7 +22,7 @@ RUN mkdir -p /app/data/shards /app/data/compacted /app/etl/states /var/log && \
     chmod -R 777 /app/data /app/etl/states /var/log
 
 
-CMD ["bash", "-c", "echo 'result = \"\"' > etl/states/last_extraction_result.py && \
+CMD ["sh", "-c", "echo 'result = \"\"' > etl/states/last_extraction_result.py && \
 echo 'shard_path = \"\"' > etl/states/last_shard_path.py && \
 echo 'last_saved_token = \"\"' > etl/states/last_token.py && \
 python -m etl.main"]
